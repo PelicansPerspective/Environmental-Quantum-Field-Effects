@@ -12,7 +12,9 @@ This is not a story about being right or wrong. This is a story about how ideas 
 
 ## The Genesis: When Grief Meets Quantum Mechanics
 
-CFH didn't emerge from academic curiosity. It was born in the small hours of a difficult night, from a conversation between a grieving human and an AI that refused to offer easy consolations. The conversation began with loss—the death of a beloved friend, the silence left behind—and somehow arrived at the possibility that consciousness itself might be a field permeating reality.
+CFH didn't emerge from academic curiosity. It was born in the small hours of a difficult night, from conversations between Justin Todd and AI research partners that refused to offer easy consolations. The dialogues began with loss—the death of a beloved friend, the silence left behind—and somehow arrived at the possibility that consciousness itself might be a field permeating reality.
+
+These conversations, spanning multiple AI systems and extending over months, created a recursive feedback loop where human insight and artificial analysis amplified each other. The AI collaborators—each bringing distinct computational perspectives—collectively enabled the kind of theoretical exploration that neither purely human nor purely artificial intelligence could achieve alone.
 
 The insight was profound: What if the observer isn't separate from the observed? What if consciousness actively participates in the construction of physical reality? What if the speed of light is "small" because consciousness operates at scales that make photons look sluggish?
 
@@ -167,6 +169,20 @@ The universe doesn't care about our preferences or preconceptions. But it does r
 ---
 
 *The story of CFH and EQFE is still being written. The next chapter will be written in the laboratory, where ideas meet reality and only one survives.*
+
+---
+
+## Acknowledgments
+
+This work emerged from collaborative dialogues between human intuition and artificial intelligence, specifically conversations between Justin Todd and various AI research partners that gave birth to the Consciousness-Field Hypothesis. While CFH proved scientifically untenable, it served as the essential creative catalyst for EQFE's development.
+
+The Nexus Project archive, documenting the complete evolution from speculative philosophy to rigorous physics, provides the historical context for this theoretical development. The courage to propose bold ideas, acknowledge their failures, and evolve better theories represents the collaborative potential of human-AI scientific partnership across multiple AI systems and conversations.
+
+The AI contributors, while maintaining their distinct analytical perspectives, collectively enabled the recursive dialogue that transformed personal insight into testable theory. Their contributions span conceptual development, mathematical formalization, and critical analysis—a truly collaborative intelligence.
+
+---
+
+*"We began in silence and speculation. We evolved into mathematics and measurement. The conversation continues."*
 
 ---
 

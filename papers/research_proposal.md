@@ -1,6 +1,6 @@
 # Research Proposal: Experimental Validation of Environmental Quantum Field Effects
 
-**Principal Investigator**: [Name]  
+**Principal Investigator**: Justin Todd  
 **Institution**: [Institution]  
 **Proposal Date**: July 2025  
 **Requested Duration**: 24 months  
@@ -12,7 +12,7 @@
 
 We propose the first systematic experimental investigation of Environmental Quantum Field Effects (EQFE)—a theoretical framework predicting that controlled environmental scalar fields can enhance quantum correlations beyond classical expectations while remaining within established quantum mechanical bounds.
 
-EQFE emerged from rigorous theoretical reconstruction of earlier consciousness-field hypotheses, preserving the core insight about environmental enhancement while discarding scientifically untenable elements. The framework makes specific, falsifiable predictions for standard quantum optics experiments that can be tested with current technology.
+EQFE emerged from rigorous theoretical reconstruction of earlier consciousness-field hypotheses developed through collaborative research between Justin Todd and AI research partners. The framework preserves core insights about environmental enhancement while discarding scientifically untenable elements, resulting in specific, falsifiable predictions testable with current technology.
 
 **Key Innovation**: Rather than treating environmental coupling as inevitable decoherence, we investigate controlled coupling regimes where environmental fields enhance quantum correlations.
 
@@ -293,7 +293,15 @@ We request support to conduct the first systematic experimental test of environm
 
 ## References
 
-[Standard references would be included in final version]
+[1] Todd, J. & AI Research Collaborators. "Consciousness-Field Hypothesis: A Speculative Framework for Quantum-Consciousness Interactions." Nexus Project Archive (2024).
+
+[2] Todd, J. "From Beautiful Failures to Rigorous Physics: The CFH-to-EQFE Evolution." Environmental Quantum Field Effects Project (2025).
+
+[3] Aspect, A., et al. "Experimental realization of Einstein-Podolsky-Rosen-Bohm Gedankenexperiment." Phys. Rev. Lett. 49, 91 (1982).
+
+[4] Clauser, J. F., et al. "Proposed experiment to test local hidden-variable theories." Phys. Rev. Lett. 23, 880 (1969).
+
+[5] Tsirelson, B. S. "Quantum generalizations of Bell's inequality." Lett. Math. Phys. 4, 93 (1980).
 
 ---
 

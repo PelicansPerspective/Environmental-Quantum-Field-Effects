@@ -21,7 +21,7 @@ We propose—and rigorously demonstrate—that environmental scalar fields can, 
 
 ### The Path from Speculation to Science
 
-This work emerged from earlier investigations into consciousness-field theories (CFH), which, while providing valuable intuitions about observer-environment coupling, contained fundamental theoretical flaws:
+This work emerged from earlier investigations into consciousness-field theories (CFH), developed through collaborative dialogues between Justin Todd and AI research partners. While CFH provided valuable intuitions about observer-environment coupling, it contained fundamental theoretical flaws:
 
 - Predictions violating Tsirelson's bound (S > 2√2)
 - Faster-than-light field propagation (C ≫ c)
@@ -258,13 +258,27 @@ We invite the community to test, critique, and extend this work. EQFE may be rig
 
 ## Acknowledgments
 
-This work emerged from extensive collaboration between human intuition and artificial intelligence partnership in exploring the boundaries of physical theory. We acknowledge the creative catalyst provided by earlier consciousness-field investigations while emphasizing that EQFE represents a complete theoretical reconstruction guided by established physics principles.
+This work emerged from extensive collaboration between human intuition and artificial intelligence partnership in exploring the boundaries of physical theory. We acknowledge the creative catalyst provided by earlier consciousness-field investigations developed through conversations between Justin Todd and AI research collaborators, while emphasizing that EQFE represents a complete theoretical reconstruction guided by established physics principles.
 
 ---
 
 ## References
 
-[Standard physics references would be included in final version]
+[1] Todd, J. & AI Research Collaborators. "Consciousness-Field Hypothesis: A Speculative Framework for Quantum-Consciousness Interactions." Nexus Project Archive (2024). [Internal Report]
+
+[2] Todd, J. "From Beautiful Failures to Rigorous Physics: The CFH-to-EQFE Evolution." Environmental Quantum Field Effects Project (2025).
+
+[3] Aspect, A., et al. "Experimental realization of Einstein-Podolsky-Rosen-Bohm Gedankenexperiment." Phys. Rev. Lett. 49, 91 (1982).
+
+[4] Clauser, J. F., et al. "Proposed experiment to test local hidden-variable theories." Phys. Rev. Lett. 23, 880 (1969).
+
+[5] Tsirelson, B. S. "Quantum generalizations of Bell's inequality." Lett. Math. Phys. 4, 93 (1980).
+
+[6] Bell, J. S. "On the Einstein Podolsky Rosen paradox." Physics 1, 195 (1964).
+
+[7] Nielsen, M. A. & Chuang, I. L. "Quantum Computation and Quantum Information." Cambridge University Press (2000).
+
+[8] Breuer, H.-P. & Petruccione, F. "The Theory of Open Quantum Systems." Oxford University Press (2002).
 
 ---
 

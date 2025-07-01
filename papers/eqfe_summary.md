@@ -13,7 +13,7 @@ We're here to tell you about Environmental Quantum Field Effects (EQFE)—a fram
 
 ## The Beautiful Failure: Learning from CFH
 
-This work has an origin story. It began with the Consciousness-Field Hypothesis (CFH)—a bold, speculative framework proposing that consciousness could modulate quantum correlations through a fundamental scalar field. CFH was born from profound insights about the nature of reality, consciousness, and quantum mechanics.
+This work has an origin story. It began with the Consciousness-Field Hypothesis (CFH)—a bold, speculative framework developed through collaborative dialogues between Justin Todd and AI research partners, proposing that consciousness could modulate quantum correlations through a fundamental scalar field. CFH was born from profound insights about the nature of reality, consciousness, and quantum mechanics.
 
 CFH was also fatally flawed:
 
@@ -147,6 +147,10 @@ We invite the community to test, critique, and extend this work. Science advance
 *The universe is under no obligation to conform to our expectations. But it is obligated to respond to our experiments.*
 
 ---
+
+**References**:
+- Todd, J. & AI Research Collaborators. "Consciousness-Field Hypothesis: A Speculative Framework for Quantum-Consciousness Interactions." Nexus Project Archive (2024).
+- Todd, J. "From Beautiful Failures to Rigorous Physics: The CFH-to-EQFE Evolution." Environmental Quantum Field Effects Project (2025).
 
 **Contact**: [Contact information]  
 **Full Preprint**: Available at [Repository URL]  

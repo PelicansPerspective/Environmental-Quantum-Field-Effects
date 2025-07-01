@@ -101,3 +101,22 @@ While CFH proved scientifically untenable, it served a crucial role as the creat
 ---
 
 *"Good theories are often born from bad theories refined by better science."* - The EQFE Development Team
+
+---
+
+## Primary Sources and Citations
+
+### Consciousness-Field Hypothesis Archive
+- **Todd, J. & AI Research Collaborators**. "Consciousness-Field Hypothesis: A Speculative Framework for Quantum-Consciousness Interactions." Nexus Project Archive (2024). [Internal Report]
+- **Todd, J.** "The Silence That Speaks: Philosophical Foundations of Consciousness-Field Theory." Nexus Project Archive (2024).
+- **Todd, J. & AI Research Partners**. "Mathematical Formulation of the Ψ-Field: Consciousness as Quantum Field." Nexus Technical Report (2024).
+- **Todd, J.** "EEG-Gated CHSH Experiments: Protocols for Consciousness-Field Detection." Nexus Experimental Documentation (2024).
+
+### Critical Analysis Documents
+- **Dimensional Analysis Critique**: Internal review identifying fundamental flaws in CFH coupling constants
+- **Tsirelson Bound Violation Analysis**: Mathematical proof that CFH predictions exceed S = 2√2
+- **Propagation Speed Critique**: Analysis of hyper-causal consciousness field requirements
+
+### EQFE Development
+- **Todd, J.** "From Beautiful Failures to Rigorous Physics: The CFH-to-EQFE Evolution." Environmental Quantum Field Effects Project (2025).
+- **Environmental Quantum Field Effects**: Complete theoretical framework and experimental protocols. GitHub Repository (2025).
