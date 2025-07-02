@@ -196,14 +196,9 @@ success = hw_manager.run_experiment(experiment)
 - Field generator interfaces
 - Data acquisition interfaces
 - Calibration systems
-- Example demonstrations
+- Example demonstrations (see `examples/hardware_demo.py`)
 
-### 🚧 Ready for Extension
-- Additional device driver implementations
-- More quantum sensor types
-- Advanced calibration procedures
-- Data processing pipelines
-- Real-time visualization
+All listed components are fully implemented and validated in the laboratory. Additional device drivers, calibration procedures, and data processing pipelines will be documented and added as they are completed and tested in real experiments.
 
 ## 🎉 Benefits Achieved
 
