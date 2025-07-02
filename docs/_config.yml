@@ -4,8 +4,50 @@ author: Justin Todd, Pelicans Perspective
 contact: justin@pelicansperspective.com
 theme: jekyll-theme-slate
 
+# Site settings
+url: "https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects"
+baseurl: "/Environmental-Quantum-Field-Effects"
+repository: PelicansPerspective/Environmental-Quantum-Field-Effects
+logo: /assets/images/favicon.png
+
 # Social links
 github_username: PelicansPerspective
+twitter_username: 
+linkedin_username:
+
+# SEO settings
+google_analytics: 
+lang: en
+locale: en_US
+twitter:
+  username: 
+  card: summary
+og_image: /assets/images/favicon.png
+
+# Navigation
+nav_links:
+  - title: Home
+    url: /
+    icon: home
+  - title: Documentation
+    url: /getting_started.html
+    icon: book
+  - title: Roadmap
+    url: /project_roadmap.html
+    icon: map
+  - title: Visualizations
+    url: /visualization_assets/
+    icon: chart-line
+  - title: GitHub
+    url: https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects
+    icon: github
+    external: true
 
 # Build settings
 markdown: kramdown
+sass:
+  style: compressed
+permalink: pretty
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap

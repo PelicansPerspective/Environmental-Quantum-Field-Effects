@@ -3,30 +3,74 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <meta name="theme-color" content="#1a237e">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <title>{% if page.title %}{{ page.title | escape }} | EQFE{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+    <meta name="keywords" content="quantum physics, quantum field theory, quantum biology, quantum computing, quantum correlations">
+    <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">{{ site.title }}</h1>
-      <h2 class="project-tagline">{{ site.description }}</h2>
-      <a href="https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects" class="btn">View on GitHub</a>
-      <a href="https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects/tree/main/docs/visualization_assets" class="btn">Visualizations</a>
-      <a href="https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects/tree/main/examples" class="btn">Examples</a>
-      <a href="https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects/blob/main/REVOLUTIONARY_FINDINGS.md" class="btn">Findings</a>
+      <div class="header-content">
+        <h1 class="project-name">{{ site.title }}</h1>
+        <h2 class="project-tagline">{{ site.description }}</h2>
+        
+        <nav class="site-nav">
+          <a href="{{ '/' | relative_url }}" class="btn"><i class="fas fa-home"></i> Home</a>
+          <a href="{{ '/getting_started.html' | relative_url }}" class="btn"><i class="fas fa-book"></i> Documentation</a>
+          <a href="{{ '/project_roadmap.html' | relative_url }}" class="btn"><i class="fas fa-map"></i> Roadmap</a>
+          <a href="{{ '/visualization_assets/' | relative_url }}" class="btn"><i class="fas fa-chart-line"></i> Visualizations</a>
+          <a href="{{ '/REVOLUTIONARY_FINDINGS.html' | relative_url }}" class="btn"><i class="fas fa-lightbulb"></i> Findings</a>
+          <a href="https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects" class="btn"><i class="fab fa-github"></i> GitHub</a>
+        </nav>
+      </div>
     </section>
 
     <section class="main-content">
       {{ content }}
       
       <footer class="site-footer">
+        <div class="footer-branding">
+          <h3>Environmental Quantum Field Effects</h3>
+          <p>Exploring the frontier of quantum correlation amplification</p>
+        </div>
+        
+        <div class="footer-links">
+          <a href="https://github.com/PelicansPerspective" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="{{ '/CITATIONS.html' | relative_url }}" title="Citations"><i class="fas fa-quote-right"></i></a>
+          <a href="mailto:{{ site.contact }}" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        
         <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.title }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.author }}</a>.</span>
         <span class="site-footer-credits">Contact: <a href="mailto:{{ site.contact }}">{{ site.contact }}</a></span>
+        <span class="copyright">&copy; {{ 'now' | date: "%Y" }} Pelicans Perspective. All rights reserved.</span>
       </footer>
     </section>
+
+    <!-- Add back to top button -->
+    <button id="back-to-top" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+    <script>
+      // Back to top button functionality
+      var backToTopButton = document.getElementById("back-to-top");
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      }
+
+      backToTopButton.addEventListener('click', function() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      });
+    </script>
 
     {% if site.google_analytics %}
       <script>

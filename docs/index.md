@@ -3,11 +3,18 @@ layout: default
 title: Environmental Quantum Field Effects
 ---
 
-## A Revolutionary Approach to Quantum Correlation Enhancement
+<div class="hero-section">
+  <h2>A Revolutionary Approach to Quantum Correlation Enhancement</h2>
 
-What if everything we thought we knew about quantum decoherence was incomplete? What if, under the right conditions, environmental interactions could actually *amplify* quantum correlations rather than destroy them?
+  <p class="lead">What if everything we thought we knew about quantum decoherence was incomplete? What if, under the right conditions, environmental interactions could actually <em>amplify</em> quantum correlations rather than destroy them?</p>
 
-The Environmental Quantum Field Effects (EQFE) project explores this radical possibility through rigorous theoretical analysis, computational modeling, and experimental validation. We're not just studying quantum mechanics—we're discovering how nature itself has evolved to harness quantum field effects for enhanced information processing.
+  <p>The Environmental Quantum Field Effects (EQFE) project explores this radical possibility through rigorous theoretical analysis, computational modeling, and experimental validation. We're not just studying quantum mechanics—we're discovering how nature itself has evolved to harness quantum field effects for enhanced information processing.</p>
+  
+  <div class="cta-buttons">
+    <a href="{{ '/getting_started.html' | relative_url }}" class="cta-btn">Get Started</a>
+    <a href="{{ '/project_roadmap.html' | relative_url }}" class="cta-btn">View Roadmap</a>
+  </div>
+</div>
 
 ---
 
@@ -17,7 +24,7 @@ For decades, physicists have viewed environmental noise as the enemy of quantum 
 
 Our research reveals that **specific environmental conditions can temporarily amplify quantum correlations**—and that biological systems may have evolved to exploit this phenomenon. From the microtubules in neurons to the quantum dynamics of photosynthesis, nature appears to have discovered quantum field engineering long before we did.
 
-### The Mathematics Behind the Magic
+## The Mathematics Behind the Magic
 
 At the heart of our theory lies a deceptively simple equation:
 
@@ -27,88 +34,139 @@ A(φ,t) = exp[α⟨φ²⟩t - β∫₀ᵗ C(τ) dτ]
 
 This **Quantum Correlation Amplification Law** predicts when and how environmental fields can enhance rather than degrade quantum correlations. The key insight? Under certain conditions, the enhancement term (α) can dominate the decoherence term (β), creating windows of quantum advantage.
 
-This **Quantum Correlation Amplification Law** predicts when and how environmental fields can enhance rather than degrade quantum correlations. The key insight? Under certain conditions, the enhancement term (α) can dominate the decoherence term (β), creating windows of quantum advantage.
-
 ---
 
 ## What Makes This Revolutionary?
 
-### 🧬 Biology's Quantum Secret
-We've discovered that cellular structures—from microtubules to membrane interfaces—appear to be naturally optimized for quantum correlation enhancement. Brain oscillations create the perfect conditions for quantum field amplification, suggesting that consciousness itself might be a quantum phenomenon.
-
-### 🔬 Rigorous Science
-This isn't speculative physics. Our theory is:
-- **Mathematically rigorous**: Derived from standard quantum field theory
-- **Computationally validated**: Extensive simulations confirm predictions
-- **Experimentally testable**: Clear protocols for laboratory verification
-- **Physically grounded**: Respects all known quantum bounds and conservation laws
-
-### 🚀 Technological Potential
-If confirmed, EQFE could revolutionize:
-- **Quantum sensing**: Enhanced precision in measurement devices
-- **Quantum communication**: More robust quantum networks
-- **Quantum computing**: Better error correction and coherence times
-- **Biological engineering**: Understanding and enhancing natural quantum processes
+<div class="feature-section">
+  <div class="feature-card">
+    <h3>🧬 Biology's Quantum Secret</h3>
+    <p>We've discovered that cellular structures—from microtubules to membrane interfaces—appear to be naturally optimized for quantum correlation enhancement. Brain oscillations create the perfect conditions for quantum field amplification, suggesting that consciousness itself might be a quantum phenomenon.</p>
+  </div>
+  
+  <div class="feature-card">
+    <h3>🔬 Rigorous Science</h3>
+    <p>This isn't speculative physics. Our theory is:</p>
+    <ul>
+      <li><strong>Mathematically rigorous</strong>: Derived from standard quantum field theory</li>
+      <li><strong>Computationally validated</strong>: Extensive simulations confirm predictions</li>
+      <li><strong>Experimentally testable</strong>: Clear protocols for laboratory verification</li>
+      <li><strong>Physically grounded</strong>: Respects all known quantum bounds and conservation laws</li>
+    </ul>
+  </div>
+  
+  <div class="feature-card">
+    <h3>🚀 Technological Potential</h3>
+    <p>If confirmed, EQFE could revolutionize:</p>
+    <ul>
+      <li><strong>Quantum sensing</strong>: Enhanced precision in measurement devices</li>
+      <li><strong>Quantum communication</strong>: More robust quantum networks</li>
+      <li><strong>Quantum computing</strong>: Better error correction and coherence times</li>
+      <li><strong>Biological engineering</strong>: Understanding and enhancing natural quantum processes</li>
+    </ul>
+  </div>
+</div>
 
 ---
 
 ## Explore the Research
 
-### 📚 **[Read the Theory](getting_started.html)**
-Dive into the mathematical foundations, from the basic derivation to advanced perturbation theory analysis.
-
-### 💻 **[Try the Simulations](project_roadmap.html)**
-Run our computational models and explore the parameter space yourself.
-
-### 🔬 **[Experimental Protocols](visualization_assets/amplification_mechanism.html)**
-Detailed instructions for testing EQFE predictions in the laboratory.
-
-### 📖 **[Example Notebooks](visualization_assets/field_correlation_dynamics.html)**
-Interactive Jupyter notebooks demonstrating key concepts and results.
+<div class="card-grid">
+  <div class="card">
+    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60');"></div>
+    <div class="card-content">
+      <h3 class="card-title">📚 Read the Theory</h3>
+      <p>Dive into the mathematical foundations, from the basic derivation to advanced perturbation theory analysis.</p>
+      <a href="getting_started.html" class="cta-btn">Learn More</a>
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1617791160505-6f00504e3519?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60');"></div>
+    <div class="card-content">
+      <h3 class="card-title">💻 Try the Simulations</h3>
+      <p>Run our computational models and explore the parameter space yourself.</p>
+      <a href="project_roadmap.html" class="cta-btn">Get Started</a>
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1628595351029-c2bf17511435?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60');"></div>
+    <div class="card-content">
+      <h3 class="card-title">🔬 Experimental Protocols</h3>
+      <p>Detailed instructions for testing EQFE predictions in the laboratory.</p>
+      <a href="visualization_assets/amplification_mechanism.html" class="cta-btn">View Protocols</a>
+    </div>
+  </div>
+</div>
 
 ---
 
 ## Get Involved
 
+<blockquote>
 This research is at the forefront of quantum physics, and we're looking for collaborators, critics, and supporters.
+</blockquote>
 
-### 🤝 **For Researchers**
-- Review our [theoretical derivations](getting_started.html)
-- Test our [simulation code](project_roadmap.html)
-- Propose experimental validations
+<div class="feature-section">
+  <div class="feature-card">
+    <h3>🤝 For Researchers</h3>
+    <ul>
+      <li>Review our <a href="getting_started.html">theoretical derivations</a></li>
+      <li>Test our <a href="project_roadmap.html">simulation code</a></li>
+      <li>Propose experimental validations</li>
+    </ul>
+  </div>
+  
+  <div class="feature-card">
+    <h3>🏢 For Institutions</h3>
+    <ul>
+      <li>Partner with us on experimental validation</li>
+      <li>Explore commercial applications</li>
+      <li>Support graduate student research</li>
+    </ul>
+  </div>
+  
+  <div class="feature-card">
+    <h3>💡 For Skeptics</h3>
+    <ul>
+      <li>Challenge our assumptions</li>
+      <li>Identify potential flaws</li>
+      <li>Propose alternative explanations</li>
+    </ul>
+  </div>
+</div>
 
-### 🏢 **For Institutions**
-- Partner with us on experimental validation
-- Explore commercial applications
-- Support graduate student research
-
-### 💡 **For Skeptics**
-- Challenge our assumptions
-- Identify potential flaws
-- Propose alternative explanations
-
-Science thrives on scrutiny, and we welcome all forms of engagement.
+<p class="text-center">Science thrives on scrutiny, and we welcome all forms of engagement.</p>
 
 ---
 
 ## Contact & Citation
 
-**Lead Researcher:** Justin Todd, Pelicans Perspective  
-**Contact:** [justin@pelicansperspective.com](mailto:justin@pelicansperspective.com)
-
-**To cite this work:**
-```bibtex
-@misc{todd2024eqfe,
+<div class="contact-section">
+  <div class="contact-info">
+    <h3>Contact Information</h3>
+    <p><strong>Lead Researcher:</strong> Justin Todd, Pelicans Perspective<br>
+    <strong>Email:</strong> <a href="mailto:justin@pelicansperspective.com">justin@pelicansperspective.com</a></p>
+    
+    <p><strong>Repository:</strong> <a href="https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects" target="_blank">GitHub Repository</a></p>
+  </div>
+  
+  <div class="citation-info">
+    <h3>How to Cite This Work</h3>
+    <div class="code-block">
+      <pre><code class="language-bibtex">@misc{todd2024eqfe,
   title={Environmental Quantum Field Effects: Amplification of Quantum Correlations in Open Systems},
   author={Todd, Justin},
   year={2024},
   publisher={Pelicans Perspective},
   url={https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects}
-}
-```
+}</code></pre>
+    </div>
+  </div>
+</div>
 
-**Repository:** [https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects](https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects)
-
----
-
-*"In the dance between quantum systems and their environment, we have discovered that sometimes the environment leads, and the quantum system follows into greater coherence."* - Justin Todd
+<blockquote class="featured-quote">
+  <p>"In the dance between quantum systems and their environment, we have discovered that sometimes the environment leads, and the quantum system follows into greater coherence."</p>
+  <footer>— Justin Todd</footer>
+</blockquote>
