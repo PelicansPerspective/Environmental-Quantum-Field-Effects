@@ -430,6 +430,37 @@ class EnvironmentalFieldSimulator:
             "field_strength": np.max(np.abs(total_field)),
         }
 
+    def calculate_amplification(self, phi: float, field_sample: float,
+                                correlation_time: float) -> float:
+        """
+        Calculate environmental amplification factor.
+        
+        Parameters:
+        -----------
+        phi : float
+            Field coupling parameter
+        field_sample : float
+            Field sample value
+        correlation_time : float
+            Field correlation time
+            
+        Returns:
+        --------
+        float : Amplification factor
+        """
+        # Enhancement term
+        enhancement = self.alpha * phi**2 * correlation_time
+        
+        # Decoherence term (from field correlations)
+        decoherence = self.beta * field_sample**2 * correlation_time
+        
+        # Net amplification (bounded by Tsirelson limit)
+        net_amplification = np.exp(enhancement - decoherence)
+        
+        # Ensure we don't exceed quantum bounds
+        max_amplification = 2 * np.sqrt(2) / 2.0  # Conservative bound
+        
+        return min(net_amplification, max_amplification)
 
 class ParameterValidator:
     """Comprehensive parameter validation for EQFE simulations."""
@@ -653,6 +684,31 @@ class ParameterValidator:
         else:
             return value
 
+    @staticmethod
+    def validate_chsh_parameter(S: float) -> dict:
+        """
+        Validate CHSH parameter respects quantum bounds.
+        
+        Parameters:
+        -----------
+        S : float
+            CHSH parameter value
+            
+        Returns:
+        --------
+        dict : Validation results
+        """
+        tsirelson_limit = 2 * np.sqrt(2)
+        
+        return {
+            "value": S,
+            "classical_bound_respected": abs(S) <= 2.0,
+            "tsirelson_bound_respected": abs(S) <= tsirelson_limit,
+            "tsirelson_limit": tsirelson_limit,
+            "violation_type": "classical" if abs(S) > 2.0 else "none",
+            "is_valid": abs(S) <= tsirelson_limit
+        }
+
 
 def create_simulator_with_validation(
     field_mass: float = 1e-6,
@@ -717,7 +773,7 @@ if __name__ == "__main__":
         ideal_chsh, field_samples, measurement_time=1.0
     )
 
-    print(f"\nAmplification Test:")
+    print("\nAmplification Test:")
     print(f"  Ideal CHSH: {ideal_chsh:.6f}")
     print(f"  Mean modified CHSH: {np.mean(modified_chsh):.6f}")
     print(f"  Amplification factor: {np.mean(modified_chsh)/ideal_chsh:.6f}")

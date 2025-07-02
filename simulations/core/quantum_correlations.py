@@ -6,7 +6,7 @@ All simulations maintain rigorous respect for quantum mechanical bounds.
 """
 
 import numpy as np
-from scipy import stats
+from scipy import stats as scipy_stats
 from typing import Dict, Optional
 import warnings
 
@@ -433,7 +433,7 @@ class CHSHExperimentSimulator:
 
             # Simulate Bell measurements with amplification
             correlations = self._simulate_bell_measurements(
-                measurement_angles, amplification
+                measurement_angles, 1, amplification
             )
 
             # Calculate CHSH parameter
@@ -524,6 +524,77 @@ class CHSHExperimentSimulator:
                 f"Found {n_invalid} invalid S values (NaN or inf). "
                 "Check parameter ranges and numerical stability."
             )
+
+    def _simulate_bell_measurements(
+        self,
+        angles: Dict,
+        n_measurements: int,
+        amplification: float,
+    ) -> Dict:
+        """
+        Simulate Bell measurement correlations.
+
+        Parameters:
+        -----------
+        angles : Dict
+            Measurement angles for Alice and Bob
+        n_measurements : int
+            Number of measurements
+        amplification : float
+            Environmental amplification factor
+
+        Returns:
+        --------
+        Dict : Correlation measurements
+        """
+        # Alice's angles
+        a1, a2 = angles["alice"]
+        # Bob's angles
+        b1, b2 = angles["bob"]
+
+        # Ideal quantum correlations (with amplification)
+        base_correlations = {
+            "E_ab": -np.cos(a1 - b1) * amplification,
+            "E_ab'": -np.cos(a1 - b2) * amplification,
+            "E_a'b": -np.cos(a2 - b1) * amplification,
+            "E_a'b'": -np.cos(a2 - b2) * amplification,
+        }
+
+        # Add measurement noise
+        noise_std = 0.01  # 1% measurement uncertainty
+        correlations = {}
+        for key, value in base_correlations.items():
+            noise = np.random.normal(0, noise_std, n_measurements)
+            correlations[key] = np.clip(value + noise, -1, 1)
+
+        return correlations
+
+    def _calculate_chsh_parameter(self, correlations: Dict) -> float:
+        """
+        Calculate CHSH parameter from correlation measurements.
+
+        Parameters:
+        -----------
+        correlations : Dict
+            Correlation measurements
+
+        Returns:
+        --------
+        float : CHSH parameter value
+        """
+        # CHSH parameter: S = E(a,b) - E(a,b') + E(a',b) + E(a',b')
+        S = (
+            correlations["E_ab"]
+            - correlations["E_ab'"]
+            + correlations["E_a'b"]
+            + correlations["E_a'b'"]
+        )
+
+        # Return mean if arrays, otherwise return scalar
+        if hasattr(S, "__len__"):
+            return np.mean(S)
+        else:
+            return S
 
     # ...existing code...
 
@@ -686,19 +757,22 @@ if __name__ == "__main__":
 
     # Display key results
     stats = results["statistical_analysis"]
-    print(f"\nExperimental Results:")
+    print("\nExperimental Results:")
     print(
         f"  Mean CHSH parameter: {stats['descriptive_statistics']['mean']:.6f}"
     )
     print(f"  Standard error: {stats['descriptive_statistics']['sem']:.6f}")
     print(
-        f"  Classical violation: {stats['classical_comparison']['significant']}"
+        f"  Classical violation: "
+        f"{stats['classical_comparison']['significant']}"
     )
     print(
-        f"  Tsirelson bound respected: {stats['physics_validation']['tsirelson_bound_respected']}"
+        f"  Tsirelson bound respected: "
+        f"{stats['physics_validation']['tsirelson_bound_respected']}"
     )
     print(
-        f"  Effect size (vs classical): {stats['classical_comparison']['effect_size_cohen_d']:.3f}"
+        f"  Effect size (vs classical): "
+        f"{stats['classical_comparison']['effect_size_cohen_d']:.3f}"
     )
 
     print("\nQuantum correlations module validation complete!")
