@@ -29,10 +29,10 @@ title: Getting Started with EQFE
 
 Before running simulations, familiarize yourself with our theoretical foundations:
 
-- [Multi-Scale Modeling Framework](multi_scale_framework.html) - Our hierarchical approach connecting quantum field theory to observable effects
-- [Experimental Validation Framework](experimental_validation.html) - Protocols for testing EQFE predictions
-- [Computational Tools](computational_tools.html) - Advanced simulation capabilities
-- [API Reference](api_reference.html) - Complete API documentation and usage examples
+- [Multi-Scale Modeling Framework]({{ site.baseurl }}/multi_scale_framework.html) - Our hierarchical approach connecting quantum field theory to observable effects
+- [Experimental Validation Framework]({{ site.baseurl }}/experimental_validation.html) - Protocols for testing EQFE predictions
+- [Computational Tools]({{ site.baseurl }}/computational_tools.html) - Advanced simulation capabilities
+- [API Reference]({{ site.baseurl }}/api_reference.html) - Complete API documentation and usage examples
 
 ### Basic Simulation
 
@@ -101,6 +101,6 @@ python examples/advanced_analysis.py
 
 ## Next Steps
 
-- Review the [theory documentation](../theory/) for mathematical details
-- Check [experimental protocols](../experiments/protocols/) for lab procedures  
-- Explore the [API reference](api_reference.md) for detailed usage
+- Review the [theory documentation](https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects/tree/main/theory) for mathematical details
+- Check [experimental protocols](https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects/tree/main/experiments/protocols) for lab procedures  
+- Explore the [API reference]({{ site.baseurl }}/api_reference.html) for detailed usage
