@@ -16,8 +16,6 @@ title: Environmental Quantum Field Effects
   </div>
 </div>
 
----
-
 ## The Big Idea
 
 For decades, physicists have viewed environmental noise as the enemy of quantum coherence. But what if we've been looking at it wrong?
@@ -33,8 +31,6 @@ A(\phi,t) = \exp\left[\alpha\langle\phi^2\rangle t - \beta\int_0^t C(\tau) d\tau
 $$
 
 This **Quantum Correlation Amplification Law** predicts when and how environmental fields can enhance rather than degrade quantum correlations. The key insight? Under certain conditions, the enhancement term (α) can dominate the decoherence term (β), creating windows of quantum advantage.
-
----
 
 ## What Makes This Revolutionary?
 
@@ -67,8 +63,6 @@ This **Quantum Correlation Amplification Law** predicts when and how environment
   </div>
 </div>
 
----
-
 ## Recent Advances
 
 <div class="feature-section">
@@ -90,8 +84,6 @@ This **Quantum Correlation Amplification Law** predicts when and how environment
     <a href="{{ '/computational_tools' | relative_url }}" class="cta-btn">Learn More</a>
   </div>
 </div>
-
----
 
 ## Explore the Research
 
@@ -123,8 +115,6 @@ This **Quantum Correlation Amplification Law** predicts when and how environment
     </div>
   </div>
 </div>
-
----
 
 ## Get Involved
 
@@ -162,8 +152,6 @@ This research is at the forefront of quantum physics, and we're looking for coll
 </div>
 
 <p class="text-center">Science thrives on scrutiny, and we welcome all forms of engagement.</p>
-
----
 
 ## Contact & Citation
 
