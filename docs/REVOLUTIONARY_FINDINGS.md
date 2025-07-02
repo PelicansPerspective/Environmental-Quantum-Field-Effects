@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Revolutionary Findings in EQFE Research
+redirect_from:
+  - /revolutionary_findings
+  - /revolutionary_findings.html
 ---
 
 # Revolutionary Findings in Environmental Quantum Field Effects
@@ -131,4 +134,4 @@ Our discoveries point to several promising research directions:
 
 ## Publications
 
-For detailed scientific reports on these findings, please see our [publications list](publications.md).
+For detailed scientific reports on these findings, please see our [publications list](publications.html).

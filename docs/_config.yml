@@ -32,12 +32,18 @@ nav_links:
   - title: Documentation
     url: /getting_started.html
     icon: book
+  - title: Theory
+    url: /theory.html
+    icon: square-root-alt
   - title: Roadmap
     url: /project_roadmap.html
     icon: map
   - title: Visualizations
     url: /visualization_assets/
     icon: chart-line
+  - title: Findings
+    url: /REVOLUTIONARY_FINDINGS.html
+    icon: lightbulb
   - title: GitHub
     url: https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects
     icon: github
@@ -51,3 +57,4 @@ permalink: pretty
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-redirect-from
