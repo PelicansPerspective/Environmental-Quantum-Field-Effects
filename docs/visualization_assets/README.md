@@ -1,3 +1,8 @@
+---
+layout: default
+title: EQFE Visualization Assets
+---
+
 # Visualization Assets
 
 This directory contains schematic diagrams and visualization aids for the Environmental Quantum Field Effects (EQFE) project.
