@@ -700,13 +700,19 @@ class ParameterValidator:
         """
         tsirelson_limit = 2 * np.sqrt(2)
         
+        # Handle array inputs by taking mean
+        if hasattr(S, '__len__') and not isinstance(S, str):
+            S_val = np.mean(S)
+        else:
+            S_val = float(S)
+        
         return {
-            "value": S,
-            "classical_bound_respected": abs(S) <= 2.0,
-            "tsirelson_bound_respected": abs(S) <= tsirelson_limit,
+            "value": S_val,
+            "classical_bound_respected": abs(S_val) <= 2.0,
+            "tsirelson_bound_respected": abs(S_val) <= tsirelson_limit,
             "tsirelson_limit": tsirelson_limit,
-            "violation_type": "classical" if abs(S) > 2.0 else "none",
-            "is_valid": abs(S) <= tsirelson_limit
+            "violation_type": "classical" if abs(S_val) > 2.0 else "none",
+            "is_valid": abs(S_val) <= tsirelson_limit
         }
 
 
