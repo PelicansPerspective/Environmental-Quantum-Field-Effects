@@ -110,18 +110,27 @@ class EnvironmentalFieldSimulator:
 
     def _validate_parameters(self):
         """Validate that all parameters respect physics constraints."""
+        # Use the comprehensive parameter validator
+        self.coupling_strength = ParameterValidator.validate_coupling_strength(
+            self.coupling_strength
+        )
+        self.temperature = ParameterValidator.validate_temperature(
+            self.temperature
+        )
+        
+        # Additional field-specific validations
         if self.field_speed > PhysicalConstants.c:
             raise ValueError(f"Field speed {self.field_speed} exceeds c")
-        if self.coupling_strength < 0:
-            raise ValueError("Coupling strength must be non-negative")
         if self.field_mass < 0:
             raise ValueError("Field mass must be non-negative")
-        if self.temperature <= 0:
-            raise ValueError("Temperature must be positive")
-        if self.coupling_strength > 0.1:
-            warnings.warn(
-                "Large coupling may violate perturbative approximation"
-            )
+            
+        # Validate field speed is reasonable
+        if self.field_speed < 0.01 * PhysicalConstants.c:
+            warnings.warn("Very slow field speed - non-relativistic regime")
+        
+        # Validate field mass range
+        if self.field_mass > 1e10:  # eV
+            warnings.warn("Very massive field - may not be relevant for EQFE")
 
     def thermal_field_fluctuations(self, n_samples: int) -> np.ndarray:
         """
@@ -420,6 +429,229 @@ class EnvironmentalFieldSimulator:
             "structure_factor": structure_factor,
             "field_strength": np.max(np.abs(total_field)),
         }
+
+
+class ParameterValidator:
+    """Comprehensive parameter validation for EQFE simulations."""
+
+    @staticmethod
+    def validate_coupling_strength(g: float, max_perturbative: float = 0.1) -> float:
+        """
+        Validate system-environment coupling strength.
+
+        Parameters:
+        -----------
+        g : float
+            Coupling strength
+        max_perturbative : float
+            Maximum value for perturbative validity
+
+        Returns:
+        --------
+        float : Validated coupling strength
+
+        Raises:
+        -------
+        ValueError : If coupling is unphysical
+        """
+        if g < 0:
+            raise ValueError(f"Coupling strength must be non-negative, got {g}")
+        if g == 0:
+            warnings.warn("Zero coupling strength - no environmental effects")
+        if g > max_perturbative:
+            warnings.warn(
+                f"Large coupling {g} > {max_perturbative} may violate "
+                "perturbative approximation. Consider non-perturbative methods."
+            )
+        if g > 1.0:
+            raise ValueError(
+                f"Coupling strength {g} > 1.0 is unphysically large. "
+                "This would violate unitarity bounds."
+            )
+        return g
+
+    @staticmethod
+    def validate_correlation_time(tau_c: float, max_reasonable: float = 1000.0) -> float:
+        """
+        Validate environmental correlation time.
+
+        Parameters:
+        -----------
+        tau_c : float
+            Correlation time (in natural units or seconds)
+        max_reasonable : float
+            Maximum reasonable correlation time
+
+        Returns:
+        --------
+        float : Validated correlation time
+        """
+        if tau_c <= 0:
+            raise ValueError(f"Correlation time must be positive, got {tau_c}")
+        if tau_c < 1e-15:
+            warnings.warn(
+                f"Very short correlation time {tau_c} - approaching "
+                "white noise limit"
+            )
+        if tau_c > max_reasonable:
+            warnings.warn(
+                f"Very long correlation time {tau_c} - may indicate "
+                "non-Markovian regime"
+            )
+        return tau_c
+
+    @staticmethod
+    def validate_temperature(T: float, min_temp: float = 1e-6) -> float:
+        """
+        Validate temperature parameter.
+
+        Parameters:
+        -----------
+        T : float
+            Temperature (in Kelvin or natural units)
+        min_temp : float
+            Minimum allowed temperature
+
+        Returns:
+        --------
+        float : Validated temperature
+        """
+        if T <= 0:
+            raise ValueError(f"Temperature must be positive, got {T}")
+        if T < min_temp:
+            warnings.warn(
+                f"Very low temperature {T} - quantum effects dominant"
+            )
+        return T
+
+    @staticmethod
+    def validate_time_parameters(t_start: float, t_end: float, dt: float) -> tuple:
+        """
+        Validate time evolution parameters.
+
+        Parameters:
+        -----------
+        t_start : float
+            Start time
+        t_end : float
+            End time
+        dt : float
+            Time step
+
+        Returns:
+        --------
+        tuple : (t_start, t_end, dt) validated
+        """
+        if t_start < 0:
+            raise ValueError(f"Start time must be non-negative, got {t_start}")
+        if t_end <= t_start:
+            raise ValueError(f"End time {t_end} must be greater than start time {t_start}")
+        if dt <= 0:
+            raise ValueError(f"Time step must be positive, got {dt}")
+        if dt > (t_end - t_start):
+            warnings.warn(
+                f"Time step {dt} is larger than evolution time {t_end - t_start}"
+            )
+
+        # Check for numerical stability
+        if dt > 0.1:
+            warnings.warn(
+                f"Large time step {dt} may cause numerical instability"
+            )
+
+        return t_start, t_end, dt
+
+    @staticmethod
+    def validate_phase_parameter(phi: float) -> float:
+        """
+        Validate phase parameter and normalize to [0, 2π].
+
+        Parameters:
+        -----------
+        phi : float
+            Phase parameter
+
+        Returns:
+        --------
+        float : Normalized phase in [0, 2π]
+        """
+        if not np.isfinite(phi):
+            raise ValueError(f"Phase must be finite, got {phi}")
+
+        # Normalize to [0, 2π]
+        phi_normalized = phi % (2 * np.pi)
+
+        if abs(phi - phi_normalized) > 1e-10:
+            warnings.warn(
+                f"Phase {phi} normalized to {phi_normalized:.6f}"
+            )
+
+        return phi_normalized
+
+    @staticmethod
+    def validate_spectral_density_params(omega_c: float, s: float) -> tuple:
+        """
+        Validate spectral density parameters for Ohmic environments.
+
+        Parameters:
+        -----------
+        omega_c : float
+            Cutoff frequency
+        s : float
+            Ohmicity parameter (s=1 for Ohmic)
+
+        Returns:
+        --------
+        tuple : (omega_c, s) validated
+        """
+        if omega_c <= 0:
+            raise ValueError(f"Cutoff frequency must be positive, got {omega_c}")
+        if s <= 0:
+            raise ValueError(f"Ohmicity parameter must be positive, got {s}")
+        if s > 5.0:
+            warnings.warn(
+                f"Large ohmicity parameter {s} - super-Ohmic regime"
+            )
+        if s < 0.1:
+            warnings.warn(
+                f"Small ohmicity parameter {s} - sub-Ohmic regime"
+            )
+
+        return omega_c, s
+
+    @staticmethod
+    def clamp_to_physical_range(value: float, min_val: float, max_val: float, 
+                               param_name: str) -> float:
+        """
+        Clamp parameter to physically reasonable range.
+
+        Parameters:
+        -----------
+        value : float
+            Parameter value
+        min_val : float
+            Minimum allowed value
+        max_val : float
+            Maximum allowed value
+        param_name : str
+            Parameter name for warning messages
+
+        Returns:
+        --------
+        float : Clamped value
+        """
+        if value < min_val:
+            warnings.warn(
+                f"{param_name} {value} below minimum {min_val}, clamping"
+            )
+            return min_val
+        elif value > max_val:
+            warnings.warn(
+                f"{param_name} {value} above maximum {max_val}, clamping"
+            )
+            return max_val
+        else:
+            return value
 
 
 def create_simulator_with_validation(

@@ -40,6 +40,7 @@ class CHSHExperimentSimulator:
         self,
         env_simulator: EnvironmentalFieldSimulator,
         bioem_simulator: Optional["BioelectromagneticSimulator"] = None,
+        validate_inputs: bool = True,
     ):
         """
         Initialize CHSH experiment simulator.
@@ -49,11 +50,21 @@ class CHSHExperimentSimulator:
         env_simulator : EnvironmentalFieldSimulator
             Environmental field effects simulator
         bioem_simulator : BioelectromagneticSimulator, optional
-            Bioelectromagnetic coupling simulator
+            Bioelectromagnetic effects simulator
+        validate_inputs : bool
+            Whether to validate input parameters (default: True)
         """
         self.env_simulator = env_simulator
         self.bioem_simulator = bioem_simulator
-        self.validator = QuantumBoundsValidator()
+        self.validate_inputs = validate_inputs
+
+        # Import parameter validator
+        from .field_simulator import ParameterValidator
+
+        self.validator = ParameterValidator()
+
+        # Initialize quantum bounds validator
+        self.bounds_validator = QuantumBoundsValidator()
 
         # CHSH experimental parameters
         self.tsirelson_bound = 2 * np.sqrt(2)
@@ -357,6 +368,164 @@ class CHSHExperimentSimulator:
             results[key] = np.array(results[key])
 
         return results
+
+    def run_experiment(
+        self,
+        n_measurements: int = 10000,
+        measurement_angles: Optional[Dict[str, float]] = None,
+        phi: float = 0.0,
+        correlation_time: float = 1.0,
+        validate_results: bool = True,
+    ) -> Dict:
+        """
+        Run a complete CHSH Bell test experiment.
+
+        Parameters:
+        -----------
+        n_measurements : int
+            Number of measurement pairs (default: 10000)
+        measurement_angles : dict, optional
+            Alice and Bob measurement angles
+        phi : float
+            System phase parameter (default: 0.0)
+        correlation_time : float
+            Environmental correlation time (default: 1.0)
+        validate_results : bool
+            Whether to validate results against quantum bounds
+
+        Returns:
+        --------
+        dict : Experiment results and analysis
+        """
+        if self.validate_inputs:
+            # Validate input parameters
+            n_measurements = self._validate_measurement_count(n_measurements)
+            phi = self.validator.validate_phase_parameter(phi)
+            correlation_time = self.validator.validate_correlation_time(
+                correlation_time
+            )
+
+        # Set default measurement angles if not provided
+        if measurement_angles is None:
+            measurement_angles = {
+                "alice": [0, np.pi / 4],  # Alice's measurement angles
+                "bob": [np.pi / 8, 3 * np.pi / 8],  # Bob's measurement angles
+            }
+
+        # Validate measurement angles
+        if self.validate_inputs:
+            measurement_angles = self._validate_measurement_angles(
+                measurement_angles
+            )
+
+        # Generate environmental field samples
+        field_samples = self.env_simulator.thermal_field_fluctuations(
+            n_measurements
+        )
+
+        # Calculate CHSH parameter with environmental effects
+        S_values = []
+        for i in range(n_measurements):
+            # Apply environmental amplification
+            amplification = self.env_simulator.calculate_amplification(
+                phi, field_samples[i], correlation_time
+            )
+
+            # Simulate Bell measurements with amplification
+            correlations = self._simulate_bell_measurements(
+                measurement_angles, amplification
+            )
+
+            # Calculate CHSH parameter
+            S = self._calculate_chsh_parameter(correlations)
+            S_values.append(S)
+
+        S_values = np.array(S_values)
+
+        # Validate results against quantum bounds
+        if validate_results:
+            self._validate_experiment_results(S_values)
+
+        return {
+            "S_values": S_values,
+            "mean_S": np.mean(S_values),
+            "std_S": np.std(S_values),
+            "measurement_angles": measurement_angles,
+            "parameters": {
+                "n_measurements": n_measurements,
+                "phi": phi,
+                "correlation_time": correlation_time,
+            },
+            "validation": {
+                "tsirelson_violations": np.sum(S_values > 2 * np.sqrt(2)),
+                "classical_violations": np.sum(S_values > 2.0),
+                "max_S": np.max(S_values),
+            },
+        }
+
+    def _validate_measurement_count(self, n_measurements: int) -> int:
+        """Validate number of measurements."""
+        if n_measurements <= 0:
+            raise ValueError(
+                f"Number of measurements must be positive, got {n_measurements}"
+            )
+        if n_measurements < 100:
+            warnings.warn(
+                f"Small number of measurements {n_measurements} - "
+                "statistical significance may be low"
+            )
+        if n_measurements > 1e6:
+            warnings.warn(
+                f"Large number of measurements {n_measurements} - "
+                "computation may be slow"
+            )
+        return int(n_measurements)
+
+    def _validate_measurement_angles(self, angles: Dict) -> Dict:
+        """Validate measurement angle configuration."""
+        required_keys = ["alice", "bob"]
+        for key in required_keys:
+            if key not in angles:
+                raise ValueError(f"Missing measurement angles for {key}")
+
+            if len(angles[key]) != 2:
+                raise ValueError(
+                    f"{key} must have exactly 2 measurement angles, "
+                    f"got {len(angles[key])}"
+                )
+
+            # Validate individual angles
+            for i, angle in enumerate(angles[key]):
+                if not np.isfinite(angle):
+                    raise ValueError(
+                        f"{key} angle {i} is not finite: {angle}"
+                    )
+                # Normalize to [0, 2π]
+                angles[key][i] = angle % (2 * np.pi)
+
+        return angles
+
+    def _validate_experiment_results(self, S_values: np.ndarray):
+        """Validate experiment results against quantum bounds."""
+        # Check for Tsirelson bound violations
+        tsirelson_violations = np.sum(S_values > 2 * np.sqrt(2) + 1e-10)
+        if tsirelson_violations > 0:
+            warnings.warn(
+                f"Found {tsirelson_violations} Tsirelson bound violations! "
+                f"Max S = {np.max(S_values):.6f}, bound = {2*np.sqrt(2):.6f}. "
+                "This may indicate numerical errors or unphysical parameters."
+            )
+
+        # Check for NaN or infinite values
+        invalid_values = ~np.isfinite(S_values)
+        if np.any(invalid_values):
+            n_invalid = np.sum(invalid_values)
+            warnings.warn(
+                f"Found {n_invalid} invalid S values (NaN or inf). "
+                "Check parameter ranges and numerical stability."
+            )
+
+    # ...existing code...
 
 
 class BioelectromagneticSimulator:
