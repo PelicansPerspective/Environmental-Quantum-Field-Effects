@@ -35,4 +35,4 @@ This multi-scale approach enables:
 - Cross-validation between different physical implementations
 - Systematic theory refinement based on experimental feedback
 
-[Learn More](/Environmental-Quantum-Field-Effects/theory/multi_scale_modeling_framework.html)
+[Learn More](https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects/blob/master/theory/multi_scale_modeling_framework.md)

@@ -40,5 +40,5 @@ We have also developed a comprehensive scientific falsification framework to ens
 
 This approach establishes EQFE as a properly scientific theory with specific, testable predictions and clearly defined falsification criteria.
 
-[Learn More - Minimal Viable Experiment](/Environmental-Quantum-Field-Effects/experiments/protocols/minimal_viable_experiment.html)
-[Learn More - Falsification Framework](/Environmental-Quantum-Field-Effects/theory/falsification_framework.html)
+[Learn More - Minimal Viable Experiment](https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects/blob/master/experiments/protocols/minimal_viable_experiment.md)  
+[Learn More - Falsification Framework](https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects/blob/master/theory/falsification_framework.md)

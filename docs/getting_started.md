@@ -9,7 +9,7 @@ title: Getting Started with EQFE
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/[username]/Environmental-Quantum-Field-Effects.git
+   git clone https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects.git
    cd Environmental-Quantum-Field-Effects
    ```
 
