@@ -26,11 +26,12 @@ The Environmental Quantum Field Effects (EQFE) project has uncovered **groundbre
 
 **The Quantum Correlation Amplification Law:**
 
-```
+```math
 A(φ,t) = exp[α⟨φ²⟩t - β∫₀ᵗ C(τ) dτ]
 ```
 
 Where:
+
 - **α = g²/2**: Enhancement parameter (evolution optimizes this)
 - **β = g⁴/4**: Decoherence parameter (biology minimizes this)
 - **⟨φ²⟩**: Environmental field variance (cells engineer this)
@@ -64,37 +65,106 @@ Where:
 
 ## 🧪 Experimental Program
 
-### Phase 1: Proof of Concept ✅
+> 📋 **[View Full Project Roadmap](docs/project_roadmap.md)** for complete timeline, milestones, and resources
 
-- [x] Theoretical derivation complete
-- [x] Simulation framework validated  
-- [x] Physics bounds verified
-- [ ] Initial laboratory measurements
+### Phase 1: Proof of Concept [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░] 95%
 
-### Phase 2: Systematic Study
+- [x] **Theoretical derivation complete**
+  - Rigorous mathematical framework derived from QFT principles
+  - Amplification law formulated with precise parameter dependencies
+  - Published in `theory/amplification_law_derivation.md`
 
-- [ ] Temperature scanning experiments
-- [ ] Field mass parameter mapping
-- [ ] Temporal dynamics verification
-- [ ] Multi-lab replication protocols
+- [x] **Simulation framework validated**  
+  - Implementation in `simulations/core/field_simulator.py`
+  - Quantum bounds (Tsirelson, Bell) validated across parameter space
+  - Statistical significance established with comprehensive testing
 
-### Phase 3: Optimization & Applications
+- [x] **Physics bounds verified**
+  - All simulations respect Lorentz invariance, causality, and Tsirelson bounds
+  - Energy conservation verified across interaction regimes
+  - Systematic uncertainty analysis completed
 
-- [ ] Environmental engineering for enhancement
-- [ ] Quantum sensor applications
-- [ ] Technology transfer protocols
+- [ ] **Initial laboratory measurements** 👈 *Current focus*
+  - Equipment acquired and calibration protocols established
+  - CHSH Bell test setup configured per `experiments/protocols/chsh_bell_test.md`
+  - Baseline quantum correlations measured without environmental modification
+  - [View detailed status](experiments/protocols/initial_measurements_status.md)
+
+### Phase 2: Systematic Study [▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒] 0%
+
+- [ ] **Temperature scanning experiments**
+  - Parameter range: 4K to 400K in controlled increments
+  - Target metric: Correlation enhancement vs. temperature curve
+  - Expected outcome: Verification of T_opt prediction from theory
+  - Timeline: Q3-Q4 2025
+
+- [ ] **Field mass parameter mapping**
+  - Effective field mass variation through correlation engineering
+  - Dimensionless parameter study: m·τ_c product optimization
+  - Multi-dimensional parameter space exploration
+  - Timeline: Q4 2025
+
+- [ ] **Temporal dynamics verification**
+  - Time-resolved measurements at optimal temperature
+  - Observation of non-monotonic enhancement behavior
+  - Microsecond-scale resolution for quantum correlation tracking
+  - Timeline: Q4 2025-Q1 2026
+
+- [ ] **Multi-lab replication protocols**
+  - Standardized procedure development for 3+ independent labs
+  - Blind analysis methodology to prevent experimenter bias
+  - Statistical combination of multi-site results
+  - Timeline: Q1-Q2 2026
+
+### Phase 3: Optimization & Applications [░░░░░░░░░░░░░░░] 0%
+
+- [ ] **Environmental engineering for enhancement**
+  - Custom field generators for optimal correlation functions
+  - Active feedback systems for maintaining quantum advantage
+  - Miniaturization of enhancement apparatus
+  - Timeline: Q3-Q4 2026
+
+- [ ] **Quantum sensor applications**
+  - Precision metrology with enhanced correlations
+  - Biological field detection instrumentation
+  - Quantum information processing with environmental assistance
+  - Timeline: Q4 2026-Q1 2027
+
+- [ ] **Technology transfer protocols**
+  - Patent applications for key technological implementations
+  - Industry partnership development
+  - Commercialization roadmap for enhanced quantum sensors
+  - Timeline: Q1-Q2 2027
 
 ## 💻 Repository Structure
 
-```
+```ascii
 Environmental-Quantum-Field-Effects/
 ├── 📚 theory/                     # Complete mathematical derivations
+│   └── amplification_law_derivation.md   # Core theoretical foundation
 ├── 💻 simulations/                # Validated simulation framework
-├── 🧪 experiments/               # Laboratory protocols & analysis
-├── 🔧 hardware/                  # Experimental setup specifications
-├── 📄 papers/                    # Academic publications
-├── 🧪 tests/                     # Comprehensive validation suite
-└── 📖 docs/                      # Documentation & guides
+│   ├── core/                      # Core simulation engines
+│   │   ├── field_simulator.py     # Environmental field simulator
+│   │   └── quantum_correlations.py # Quantum correlation calculator
+│   └── analysis/                  # Data analysis tools
+├── 🧪 experiments/                # Laboratory protocols & analysis
+│   └── protocols/                 # Detailed experimental procedures
+│       ├── chsh_bell_test.md      # Bell test implementation
+│       ├── eqfe_validation_protocol.md # Main validation protocol
+│       └── initial_measurements_status.md # Current lab progress
+├── 🔧 hardware/                   # Experimental setup specifications
+├── 📄 papers/                     # Academic publications
+├── 🧪 tests/                      # Comprehensive validation suite
+│   ├── test_physics_validation.py # Physics bounds verification
+│   └── test_integration.py        # End-to-end testing
+├── 📖 docs/                       # Documentation & guides
+│   ├── getting_started.md         # Onboarding documentation
+│   ├── project_roadmap.md         # Timeline and milestones
+│   └── README.md                  # Documentation index
+├── README.md                      # Project overview
+├── CONTRIBUTING.md                # Contribution guidelines
+├── CITATIONS.md                   # Academic citations
+└── IMPLEMENTATION_STATUS.md       # Current implementation status
 ```
 
 ## 🚀 Quick Start
