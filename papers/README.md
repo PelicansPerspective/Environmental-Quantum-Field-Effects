@@ -72,7 +72,7 @@ The quantum foundations analysis (`quantum_foundations_analysis.md`) provides cr
 **Email**: <justin@pelicansperspective.com>  
 **Repository**: <https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects>
 
-For collaboration inquiries, please see [collaboration/](../collaboration/) directory.
+For collaboration inquiries, see the `collaboration/` directory in the repository (not part of the rendered documentation site).
 
 ---
 
