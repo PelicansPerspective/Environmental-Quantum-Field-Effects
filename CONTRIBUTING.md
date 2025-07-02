@@ -67,6 +67,7 @@ python quick_test.py
 ### 2. **Understand the Framework**
 
 Before contributing, please review:
+
 - **README.md** - Project overview and key findings
 - **theory/amplification_law_derivation.md** - Mathematical foundations
 - **docs/getting_started.md** - Detailed setup and usage guide
@@ -97,48 +98,56 @@ git push origin feature/your-contribution-name
 ## 🧪 **Contribution Types**
 
 ### **Theoretical Contributions**
+
 - Mathematical derivations and extensions
 - New physical insights and connections
 - Theoretical bounds and validation
 - Review and verification of existing theory
 
 **Requirements:**
+
 - Rigorous mathematical derivation
 - Physics compliance verification
 - Clear documentation and references
 - Connection to existing framework
 
 ### **Experimental Contributions**
+
 - Laboratory validation protocols
 - Experimental data and analysis
 - New measurement techniques
 - Replication studies and verification
 
 **Requirements:**
+
 - Detailed experimental protocols
 - Statistical analysis and error bounds
 - Raw data availability (when appropriate)
 - Clear connection to theoretical predictions
 
 ### **Simulation & Computational**
+
 - Code improvements and optimizations
 - New simulation capabilities
 - Analysis tools and visualizations
 - Performance enhancements
 
 **Requirements:**
+
 - Comprehensive testing suite
 - Performance benchmarking
 - Clear documentation and examples
 - Physics validation maintained
 
 ### **Documentation & Education**
+
 - Tutorial development and examples
 - Documentation improvements
 - Educational materials and guides
 - Translation and accessibility
 
 **Requirements:**
+
 - Accuracy and clarity
 - Appropriate technical level
 - Integration with existing docs
@@ -147,24 +156,28 @@ git push origin feature/your-contribution-name
 ## 📝 **Coding Standards**
 
 ### **Python Code Style**
+
 - Follow PEP 8 guidelines
 - Use type hints where appropriate
 - Comprehensive docstrings for all functions
 - Maximum line length: 88 characters (Black formatter)
 
 ### **Documentation Standards**
+
 - Clear, concise explanations
 - Mathematical notation using LaTeX where needed
 - Cross-references to relevant sections
 - Examples and usage demonstrations
 
 ### **Testing Requirements**
+
 - All new code must include tests
 - Physics validation for all computational results
 - Performance regression testing
 - Statistical significance verification
 
 ### **Code Quality Checks**
+
 ```bash
 # Run all quality checks
 make lint          # Code style checking
@@ -176,7 +189,9 @@ make coverage      # Test coverage analysis
 ## 🔬 **Scientific Standards**
 
 ### **Physics Compliance**
+
 All contributions must maintain strict physics compliance:
+
 - **Lorentz Invariance** - No violation of special relativity
 - **Causality** - No faster-than-light information transfer
 - **Tsirelson Bound** - Bell inequality violations must respect quantum limits
@@ -184,12 +199,14 @@ All contributions must maintain strict physics compliance:
 - **Uncertainty Principle** - Quantum limits must be respected
 
 ### **Experimental Rigor**
+
 - Proper statistical analysis with error bounds
 - Control experiments and systematic error analysis
 - Reproducible protocols with detailed procedures
 - Peer review and independent validation
 
 ### **Mathematical Rigor**
+
 - Formal derivations from established principles
 - Clear assumptions and approximation limits
 - Dimensional analysis and consistency checks
@@ -198,18 +215,21 @@ All contributions must maintain strict physics compliance:
 ## 📚 **Research Areas**
 
 ### **Priority Research Questions**
+
 1. **Environmental Optimization**: How can controlled environments maximize quantum enhancement?
 2. **Biological Applications**: What natural systems show strongest quantum field coupling?
 3. **Technological Translation**: How can EQFE principles improve quantum technologies?
 4. **Fundamental Physics**: What new insights does EQFE provide about quantum mechanics?
 
 ### **Experimental Priorities**
+
 - Temperature dependence validation
 - Field mass parameter mapping
 - Temporal dynamics verification
 - Multi-laboratory replication
 
 ### **Theoretical Extensions**
+
 - Connection to other quantum phenomena
 - Many-body system generalizations
 - Non-equilibrium dynamics
@@ -218,12 +238,15 @@ All contributions must maintain strict physics compliance:
 ## 🚀 **Publication & Attribution**
 
 ### **Collaboration Guidelines**
+
 - Contributors to significant additions will be offered co-authorship on relevant publications
 - All contributions will be acknowledged in publications and documentation
 - Independent research building on EQFE is encouraged with proper citation
 
 ### **Citation Requirements**
+
 When using EQFE in your work, please cite:
+
 ```bibtex
 @software{EQFE2025,
   title={Environmental Quantum Field Effects: Amplification Law and Experimental Framework},
@@ -237,18 +260,21 @@ When using EQFE in your work, please cite:
 ## 🛡️ **Code of Conduct**
 
 ### **Scientific Integrity**
+
 - Honest and transparent reporting of results
 - Proper attribution and citation practices
 - Open sharing of methods and data (when appropriate)
 - Constructive peer review and collaboration
 
 ### **Inclusive Environment**
+
 - Respectful and professional communication
 - Welcome contributions from all backgrounds and experience levels
 - Focus on scientific merit and rigorous methodology
 - Supportive mentoring for early-career researchers
 
 ### **Quality Standards**
+
 - Commitment to scientific rigor and accuracy
 - Thorough testing and validation of contributions
 - Clear documentation and reproducible methods
@@ -257,12 +283,14 @@ When using EQFE in your work, please cite:
 ## 📞 **Getting Help**
 
 ### **Technical Support**
+
 - **Issues**: Use GitHub Issues for bug reports and feature requests
 - **Discussions**: Use GitHub Discussions for research questions and collaboration
 - **Documentation**: Check docs/ directory for detailed guides
 - **Examples**: See examples/ directory for usage demonstrations
 
 ### **Scientific Collaboration**
+
 - **Theoretical Questions**: Open GitHub Discussion with detailed mathematical context
 - **Experimental Design**: Share protocols and preliminary results for feedback
 - **Data Analysis**: Provide clear data description and analysis goals
@@ -271,18 +299,21 @@ When using EQFE in your work, please cite:
 ## 🎯 **Contribution Examples**
 
 ### **Small Contributions**
+
 - Bug fixes and code improvements
 - Documentation clarifications
 - Test coverage improvements
 - Performance optimizations
 
 ### **Medium Contributions**
+
 - New analysis tools and visualizations
 - Extended experimental protocols
 - Additional simulation capabilities
 - Educational tutorials and examples
 
 ### **Major Contributions**
+
 - New theoretical derivations and extensions
 - Complete experimental validation studies
 - Novel applications and implementations
@@ -291,18 +322,21 @@ When using EQFE in your work, please cite:
 ## 📈 **Roadmap & Future Directions**
 
 ### **Phase 1: Foundation** (Current)
+
 - Theoretical framework completion ✅
 - Basic simulation validation ✅
 - Initial experimental protocols ✅
 - Community building and collaboration 🔄
 
 ### **Phase 2: Validation** (2025-2026)
+
 - Multi-laboratory experimental validation
 - Systematic parameter studies
 - Technology demonstration projects
 - Publication in high-impact journals
 
 ### **Phase 3: Applications** (2026+)
+
 - Quantum technology implementations
 - Biological system applications
 - Industrial and commercial translation
@@ -314,7 +348,7 @@ When using EQFE in your work, please cite:
 
 Your contributions help advance our understanding of quantum field effects in natural systems and their potential technological applications. Together, we're pioneering a new frontier in quantum science that bridges fundamental physics, biology, and technology.
 
-**Ready to contribute to revolutionary quantum science? Welcome aboard! 🚀**
+## Ready to contribute to revolutionary quantum science? Welcome aboard! 🚀
 
 ---
 
