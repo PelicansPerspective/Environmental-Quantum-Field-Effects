@@ -26,7 +26,7 @@ setup(
     description="Investigation of environmental scalar field effects on quantum correlations",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/[username]/Environmental-Quantum-Field-Effects",
+    url="https://github.com/pelicansperspective/Environmental-Quantum-Field-Effects",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -71,8 +71,8 @@ setup(
         "": ["*.md", "*.txt", "*.yaml", "*.yml"],
     },
     project_urls={
-        "Bug Reports": "https://github.com/[username]/Environmental-Quantum-Field-Effects/issues",
-        "Source": "https://github.com/[username]/Environmental-Quantum-Field-Effects",
+        "Bug Reports": "https://github.com/pelicansperspective/Environmental-Quantum-Field-Effects/issues",
+        "Source": "https://github.com/pelicansperspective/Environmental-Quantum-Field-Effects",
         "Documentation": "https://eqfe.readthedocs.io/",
     },
 )

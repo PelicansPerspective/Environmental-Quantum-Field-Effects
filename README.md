@@ -2,15 +2,16 @@
 
 🧬⚛️ **Revolutionary Discovery: Natural Systems Utilize Quantum Field Engineering**
 
-[![Build Status](https://github.com/justin-todd/Environmental-Quantum-Field-Effects/workflows/CI/badge.svg)](https://github.com/justin-todd/Environmental-Quantum-Field-Effects/actions)
-[![Coverage Status](https://codecov.io/gh/justin-todd/Environmental-Quantum-Field-Effects/branch/main/graph/badge.svg)](https://codecov.io/gh/justin-todd/Environmental-Quantum-Field-Effects)
-[![PyPI version](https://badge.fury.io/py/eqfe.svg)](https://badge.fury.io/py/eqfe)
-[![Documentation](https://img.shields.io/badge/API-Reference-blue)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/api-reference/)
-[![Theory Status](https://img.shields.io/badge/Theory-Revolutionary-red)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/theory/)
-[![Natural Systems](https://img.shields.io/badge/Biology-Quantum_Enhanced-purple)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/natural-systems/)
+[//]: # (Build status badge removed: workflow or badge URL not found or not public)
+[//]: # (Coverage badge removed: badge URL invalid, but project page is valid)
+[![Codecov Project](https://codecov.io/gh/justin-todd/Environmental-Quantum-Field-Effects/branch/main/graph/badge.svg)](https://codecov.io/gh/justin-todd/Environmental-Quantum-Field-Effects)
+[![PyPI version](https://img.shields.io/pypi/v/eqfe.svg)](https://pypi.org/project/eqfe/)
+[![Documentation](https://img.shields.io/badge/API--Reference-blue)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/api-reference/)
+[![Theory Status](https://img.shields.io/badge/Theory--Revolutionary-red)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/theory/)
+[![Natural Systems](https://img.shields.io/badge/Biology--Quantum_Enhanced-purple)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/revolutionary-findings/)
 [![Consciousness](https://img.shields.io/badge/Consciousness-Field_Correlated-orange)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/revolutionary-findings/)
-[![Complex Systems](https://img.shields.io/badge/Emergence-Quantum_Driven-gold)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/complex-systems/)
-[![Physics](https://img.shields.io/badge/Physics-Paradigm_Shifting-success)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/tests/)
+[![Complex Systems](https://img.shields.io/badge/Emergence--Quantum_Driven-gold)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/revolutionary-findings/)
+[![Physics](https://img.shields.io/badge/Physics--Paradigm_Shifting-success)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/revolutionary-findings/)
 
 ## 🌟 Revolutionary Discovery
 

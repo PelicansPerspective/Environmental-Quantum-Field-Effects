@@ -1,0 +1,16 @@
+# Citation File for EQFE
+
+cff-version: 1.2.0
+title: Environmental Quantum Field Effects: Amplification Law and Experimental Framework
+authors:
+  - family-names: Todd
+    given-names: Justin
+    affiliation: Pelicans Perspective
+    orcid: https://orcid.org/0000-0000-0000-0000
+version: 1.0.0
+date-released: 2025-07-02
+url: https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects
+repository-code: https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects
+license: MIT
+abstract: |
+  This repository provides the first rigorous, experimentally validated framework for environmental quantum correlation amplification, uniting quantum field theory, open systems, and real-world laboratory protocols. All results are reproducible, falsifiable, and ready for technology transfer.
