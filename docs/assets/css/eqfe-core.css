@@ -1,0 +1,200 @@
+/* 
+ * EQFE Core Styles
+ * Author: Justin Todd, justin@pelicansperspective.com
+ * Copyright: Pelicans Perspective
+ */
+
+/* Base Styles */
+:root {
+  --primary-color: #1a237e;
+  --secondary-color: #7986cb;
+  --accent-color: #00acc1;
+  --text-color: #333;
+  --light-bg: #f9f9f9;
+  --border-color: #ddd;
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Enhanced Back to Top Button */
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  display: none;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+#back-to-top:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  animation: none;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(26, 35, 126, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(26, 35, 126, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(26, 35, 126, 0); }
+}
+
+/* Collapsible Theory Sections */
+.collapsible-theory {
+  margin: 1.5rem 0;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.collapsible-header {
+  background-color: var(--light-bg);
+  padding: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.collapsible-header:hover {
+  background-color: #eef;
+}
+
+.collapsible-content {
+  padding: 1rem;
+  border-top: 1px solid var(--border-color);
+  background-color: white;
+  overflow-x: auto; /* For wide LaTeX equations */
+}
+
+.toggle-icon {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* Email Capture Footer */
+.email-signup {
+  background-color: var(--light-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  border: 1px solid var(--border-color);
+}
+
+.email-signup h3 {
+  margin-top: 0;
+}
+
+.email-form {
+  display: flex;
+  max-width: 500px;
+}
+
+.email-form input[type="email"] {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 1rem;
+}
+
+.email-form button {
+  padding: 8px 16px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.email-form button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Poll Component */
+.poll-container {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: var(--light-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.poll-options {
+  margin-top: 1rem;
+}
+
+.poll-option {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.poll-option input[type="radio"] {
+  margin-right: 10px;
+}
+
+.poll-submit {
+  margin-top: 1rem;
+  padding: 8px 16px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.poll-submit:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Loading Animation for Content */
+.content-skeleton {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: opacity 0.5s ease;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid var(--light-bg);
+  border-top: 5px solid var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

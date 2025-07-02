@@ -4,20 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#1a237e">
+    
+    <!-- Preload critical resources to avoid flash of unstyled content -->
+    <link rel="preload" href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style">
+    <link rel="preload" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" as="style">
+    <link rel="preload" href="{{ '/assets/css/eqfe-core.css?v=' | append: site.github.build_revision | relative_url }}" as="style">
+    <link rel="preload" href="{{ '/assets/css/interactive.css?v=' | append: site.github.build_revision | relative_url }}" as="style">
+    
+    <!-- Load stylesheets -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/eqfe-core.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/interactive.css?v=' | append: site.github.build_revision | relative_url }}">
+    
     <title>{% if page.title %}{{ page.title | escape }} | EQFE{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
     <meta name="keywords" content="quantum physics, quantum field theory, quantum biology, quantum computing, quantum correlations">
     <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
-    <!-- Plotly.js for interactive visualizations -->
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <!-- jQuery for collapsible sections -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Interactive visualization styles and scripts -->
-    <link rel="stylesheet" href="{{ '/assets/css/interactive.css?v=' | append: site.github.build_revision | relative_url }}">
-    <script src="{{ '/assets/js/eqfe-visualizations.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+    
+    <!-- Preload critical JavaScript -->
+    <link rel="preload" href="https://cdn.plot.ly/plotly-latest.min.js" as="script">
+    <link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script">
+    <link rel="preload" href="{{ '/assets/js/eqfe-core.js?v=' | append: site.github.build_revision | relative_url }}" as="script">
+    <link rel="preload" href="{{ '/assets/js/eqfe-visualizations.js?v=' | append: site.github.build_revision | relative_url }}" as="script">
+    
+    <!-- Critical rendering path scripts -->
+    <script>
+      // Inline script to prevent flash of unstyled content
+      document.documentElement.className = 'js-loading';
+      window.addEventListener('DOMContentLoaded', function() {
+        document.documentElement.className = document.documentElement.className.replace('js-loading', 'js-loaded');
+      });
+      
+      // Check for WebP support and convert images
+      (function() {
+        // Feature detection for WebP support
+        var WebP = new Image();
+        WebP.onload = WebP.onerror = function() {
+          if (WebP.height == 2) {
+            // WebP is supported
+            var images = document.querySelectorAll('img[data-webp-src]');
+            images.forEach(function(img) {
+              img.src = img.getAttribute('data-webp-src');
+            });
+            document.documentElement.className += ' webp';
+          } else {
+            // WebP is not supported
+            document.documentElement.className += ' no-webp';
+          }
+        };
+        WebP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+      })();
+      
+      // Set max-width for all images and lazy load them
+      window.addEventListener('load', function() {
+        // Find all images and add style attributes
+        var allImages = document.querySelectorAll('img:not([style])');
+        allImages.forEach(function(img) {
+          img.style.maxWidth = '100%';
+          img.style.height = 'auto';
+          
+          // Add lazy loading if browser supports it
+          if ('loading' in HTMLImageElement.prototype) {
+            img.loading = 'lazy';
+          }
+        });
+      });
+    </script>
+    
+    <!-- Load JavaScript libraries -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="{{ '/assets/js/eqfe-core.js?v=' | append: site.github.build_revision | relative_url }}" defer></script>
+    <script src="{{ '/assets/js/eqfe-visualizations.js?v=' | append: site.github.build_revision | relative_url }}" defer></script>
   </head>
   <body>
     <section class="page-header">
@@ -40,6 +101,16 @@
     <section class="main-content">
       {{ content }}
       
+      <!-- Email signup section before footer -->
+      <div class="email-signup">
+        <h3><i class="fas fa-envelope-open-text"></i> Stay Updated on EQFE Research</h3>
+        <p>Receive notifications about new simulations, theoretical advances, and experimental validations.</p>
+        <form class="email-form" id="email-signup-form" action="https://formspree.io/f/{{ site.formspree_id | default: 'your-formspree-id' }}" method="POST">
+          <input type="email" name="email" placeholder="Your email address" required>
+          <button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
+        </form>
+      </div>
+      
       <footer class="site-footer">
         <div class="footer-branding">
           <h3>Environmental Quantum Field Effects</h3>
@@ -58,52 +129,14 @@
       </footer>
     </section>
 
-    <!-- Add back to top button -->
+    <!-- Enhanced floating back to top button -->
     <button id="back-to-top" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
-
-    <script>
-      // Back to top button functionality
-      var backToTopButton = document.getElementById("back-to-top");
-      window.onscroll = function() {scrollFunction()};
-
-      function scrollFunction() {
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-          backToTopButton.style.display = "block";
-        } else {
-          backToTopButton.style.display = "none";
-        }
-      }
-
-      backToTopButton.addEventListener('click', function() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-      });
-      
-      // Initialize collapsible theory sections and interactive plots when document is ready
-      $(document).ready(function() {
-        // Set up collapsible theory sections
-        $('.collapsible-theory').each(function() {
-          let $header = $(this).find('.collapsible-header');
-          let $content = $(this).find('.collapsible-content');
-          
-          // Initially hide content
-          $content.hide();
-          
-          // Add toggle icon
-          $header.append('<span class="toggle-icon"><i class="fas fa-plus"></i></span>');
-          
-          // Handle click events
-          $header.on('click', function() {
-            $content.slideToggle(300);
-            let $icon = $(this).find('.toggle-icon i');
-            if ($icon.hasClass('fa-plus')) {
-              $icon.removeClass('fa-plus').addClass('fa-minus');
-            } else {
-              $icon.removeClass('fa-minus').addClass('fa-plus');
-            }
-          });
-        });
-      });
+    
+    <!-- Loading skeleton overlay -->
+    <div class="content-skeleton">
+      <div class="spinner"></div>
+      <p>Loading EQFE content...</p>
+    </div>
     </script>
 
     {% if site.google_analytics %}
