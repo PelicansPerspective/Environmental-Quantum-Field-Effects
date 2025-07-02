@@ -104,15 +104,22 @@
         <h1 class="project-name">{{ site.title }}</h1>
         <h2 class="project-tagline">{{ site.description }}</h2>
         
+        <!-- Navigation -->
         <nav class="site-nav">
-          <a href="{{ site.baseurl }}/" class="btn"><i class="fas fa-home"></i> Home</a>
-          <a href="{{ site.baseurl }}/getting_started.html" class="btn"><i class="fas fa-book"></i> Documentation</a>
-          <a href="{{ site.baseurl }}/theory.html" class="btn"><i class="fas fa-square-root-alt"></i> Theory</a>
-          <a href="{{ site.baseurl }}/api_reference.html" class="btn"><i class="fas fa-code"></i> API</a>
-          <a href="{{ site.baseurl }}/project_roadmap.html" class="btn"><i class="fas fa-map"></i> Roadmap</a>
-          <a href="{{ site.baseurl }}/visualization_assets/index.html" class="btn"><i class="fas fa-chart-line"></i> Visualizations</a>
-          <a href="{{ site.baseurl }}/REVOLUTIONARY_FINDINGS.html" class="btn"><i class="fas fa-lightbulb"></i> Findings</a>
-          <a href="https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects" class="btn"><i class="fab fa-github"></i> GitHub</a>
+          <ul>
+            <li><a href="{{ site.baseurl }}/getting-started/">Getting Started</a></li>
+            <li><a href="{{ site.baseurl }}/theory/">Theory</a></li>
+            <li><a href="{{ site.baseurl }}/api-reference/">API Reference</a></li>
+            <li><a href="{{ site.baseurl }}/project-roadmap/">Project Roadmap</a></li>
+            <li><a href="{{ site.baseurl }}/revolutionary-findings/">Revolutionary Findings</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle">Visualizations <i class="fas fa-caret-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="{{ site.baseurl }}/visualization-assets/amplification-mechanism/">Amplification Mechanism</a></li>
+                <li><a href="{{ site.baseurl }}/visualization-assets/field-correlation-dynamics/">Field Correlation Dynamics</a></li>
+              </ul>
+            </li>
+          </ul>
         </nav>
       </div>
     </section>

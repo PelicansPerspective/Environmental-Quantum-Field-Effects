@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Field Correlation Dynamics in EQFE
+title: Field Correlation Dynamics
+permalink: /visualization-assets/field-correlation-dynamics/
 ---
 
 # Field Correlation Dynamics in EQFE
@@ -10,6 +11,13 @@ title: Field Correlation Dynamics in EQFE
 This document provides visualizations of the environmental field correlation dynamics that underpin the quantum correlation amplification effect. The temporal and spatial characteristics of field correlations are essential for understanding how quantum advantages emerge in biological systems.
 
 ## 1. Field Correlation Function
+
+<div class="visualization-container">
+  <div id="correlation-function-plot" class="plot-container"
+       data-plot-src="{{ site.baseurl }}/assets/data/correlation_data.json"
+       data-plot-config="{{ site.baseurl }}/assets/config/correlation_plot_config.json">
+  </div>
+</div>
 
 The field correlation function C(τ) characterizes the memory of the environmental field:
 
@@ -62,7 +70,6 @@ Temperature significantly affects field correlation functions. The plot above sh
                               τ                            τ
     Quantum      Pure Quantum                Enhanced              Thermalized
     Regime       Correlations               Correlations          (Decoherence)
-```
 
 ## 5. Field-Induced Amplification Dynamics
 

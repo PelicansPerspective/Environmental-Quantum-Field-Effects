@@ -19,7 +19,7 @@ Our visualizations are now fully interactive! Mouse over elements, adjust parame
     <div class="card-content">
       <h3 class="card-title">Amplification Mechanism</h3>
       <p>Interactive diagrams of the quantum correlation amplification mechanism with adjustable parameter regimes.</p>
-      <a href="amplification_mechanism.html" class="cta-btn">Explore Interactive Model</a>
+      <a href="{{ site.baseurl }}/visualization-assets/amplification-mechanism/" class="cta-btn">Explore Interactive Model</a>
     </div>
   </div>
   
@@ -30,7 +30,7 @@ Our visualizations are now fully interactive! Mouse over elements, adjust parame
     <div class="card-content">
       <h3 class="card-title">Field Correlation Dynamics</h3>
       <p>Live visualization of field correlation dynamics with adjustable field masses, temperatures, and spatial distributions.</p>
-      <a href="field_correlation_dynamics.html" class="cta-btn">Explore Interactive Model</a>
+      <a href="{{ site.baseurl }}/visualization-assets/field-correlation-dynamics/" class="cta-btn">Explore Interactive Model</a>
     </div>
   </div>
 </div>

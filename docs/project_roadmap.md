@@ -1,7 +1,7 @@
 ---
 layout: default
 title: EQFE Project Roadmap
-permalink: /project_roadmap.html
+permalink: /project-roadmap/
 ---
 
 # EQFE Project Roadmap

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: API Reference
-permalink: /api_reference.html
+permalink: /api-reference/
 ---
 
 ## Core Components

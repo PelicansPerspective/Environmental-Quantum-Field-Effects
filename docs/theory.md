@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Theoretical Foundations of EQFE
-permalink: /theory.html
+permalink: /theory/
 ---
 
 # Theoretical Foundations

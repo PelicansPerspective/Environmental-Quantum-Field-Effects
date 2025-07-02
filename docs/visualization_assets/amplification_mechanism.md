@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Amplification Mechanism
+permalink: /visualization-assets/amplification-mechanism/
 ---
 
 # Quantum Correlation Amplification Mechanism
@@ -12,7 +13,10 @@ The following diagrams illustrate the key mechanisms by which environmental quan
 ## 1. Basic Amplification Process
 
 <div class="visualization-container">
-  <div id="amplification-process-plot" class="plot-container"></div>
+  <div id="amplification-process-plot" class="plot-container" 
+       data-plot-src="{{ site.baseurl }}/assets/data/amplification_data.json"
+       data-plot-config="{{ site.baseurl }}/assets/config/amplification_plot_config.json">
+  </div>
 </div>
 
 The amplification process relies on constructive interference between quantum system dynamics and environmental field fluctuations. Under optimized conditions, the amplification factor A(φ,t) enhances rather than suppresses quantum correlations.
