@@ -54,16 +54,16 @@ If confirmed, EQFE could revolutionize:
 
 ## Explore the Research
 
-### 📚 **[Read the Theory](https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects/tree/main/theory/)**
+### 📚 **[Read the Theory](getting_started.html)**
 Dive into the mathematical foundations, from the basic derivation to advanced perturbation theory analysis.
 
-### 💻 **[Try the Simulations](https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects/tree/main/simulations/)**
+### 💻 **[Try the Simulations](project_roadmap.html)**
 Run our computational models and explore the parameter space yourself.
 
-### 🔬 **[Experimental Protocols](https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects/tree/main/experiments/)**
+### 🔬 **[Experimental Protocols](visualization_assets/amplification_mechanism.html)**
 Detailed instructions for testing EQFE predictions in the laboratory.
 
-### 📖 **[Example Notebooks](https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects/tree/main/examples/)**
+### 📖 **[Example Notebooks](visualization_assets/field_correlation_dynamics.html)**
 Interactive Jupyter notebooks demonstrating key concepts and results.
 
 ---
@@ -73,8 +73,8 @@ Interactive Jupyter notebooks demonstrating key concepts and results.
 This research is at the forefront of quantum physics, and we're looking for collaborators, critics, and supporters.
 
 ### 🤝 **For Researchers**
-- Review our [theoretical derivations](https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects/tree/main/theory/)
-- Test our [simulation code](https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects/tree/main/simulations/)
+- Review our [theoretical derivations](getting_started.html)
+- Test our [simulation code](project_roadmap.html)
 - Propose experimental validations
 
 ### 🏢 **For Institutions**

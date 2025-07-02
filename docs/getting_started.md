@@ -1,3 +1,8 @@
+---
+layout: default
+title: Getting Started with EQFE
+---
+
 # Getting Started with EQFE
 
 ## Installation

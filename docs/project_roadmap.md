@@ -1,3 +1,8 @@
+---
+layout: default
+title: EQFE Project Roadmap
+---
+
 # EQFE Project Roadmap
 
 This document outlines the comprehensive timeline and milestone schedule for the Environmental Quantum Field Effects (EQFE) project.

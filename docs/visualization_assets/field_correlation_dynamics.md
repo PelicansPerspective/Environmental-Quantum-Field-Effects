@@ -1,3 +1,8 @@
+---
+layout: default
+title: Field Correlation Dynamics in EQFE
+---
+
 # Field Correlation Dynamics in EQFE
 
 ## Overview

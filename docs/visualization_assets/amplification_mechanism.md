@@ -1,3 +1,8 @@
+---
+layout: default
+title: Amplification Mechanism
+---
+
 # Quantum Correlation Amplification Mechanism
 
 ## Overview Schematic
