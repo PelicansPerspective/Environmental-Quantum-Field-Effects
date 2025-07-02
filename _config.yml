@@ -1,0 +1,11 @@
+title: Environmental Quantum Field Effects (EQFE)
+description: A theoretical and computational framework for exploring how non-Markovian environments can amplify quantum correlations.
+author: Justin Todd, Pelicans Perspective
+contact: justin@pelicansperspective.com
+theme: jekyll-theme-cayman
+
+# Social links
+github_username:  PelicansPerspective
+
+# Build settings
+markdown: kramdown
