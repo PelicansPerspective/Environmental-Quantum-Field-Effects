@@ -1,3 +1,9 @@
+---
+layout: default
+title: Amplification Law Derivation
+permalink: /theory/amplification-law-derivation/
+---
+
 # Amplification Law Derivation
 
 This document provides a complete derivation of the EQFE Amplification Law from first principles of quantum field theory.
@@ -65,7 +71,7 @@ The amplification law shows that quantum correlations can be enhanced when:
 
 ## Mathematical Details
 
-For a complete mathematical treatment including all intermediate steps, please see the [Detailed Amplification Derivation](detailed_amplification_derivation.html).
+For a complete mathematical treatment including all intermediate steps, please see the [Detailed Amplification Derivation]({{ site.baseurl }}/theory/detailed-amplification-derivation/).
 
 ## References
 

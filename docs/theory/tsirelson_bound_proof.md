@@ -1,3 +1,9 @@
+---
+layout: default
+title: Tsirelson Bound Proof
+permalink: /theory/tsirelson-bound-proof/
+---
+
 # Tsirelson Bound Proof
 
 This document provides a rigorous proof that the EQFE model respects quantum mechanical bounds, particularly the Tsirelson bound for quantum correlations.

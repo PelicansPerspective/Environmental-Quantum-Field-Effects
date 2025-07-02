@@ -1,3 +1,9 @@
+---
+layout: default
+title: Conceptual Clarifications
+permalink: /theory/conceptual-clarifications/
+---
+
 # Conceptual Clarifications
 
 This document addresses common questions and clarifies key concepts in the EQFE framework.
@@ -30,7 +36,7 @@ EQFE enhancement:
 
 ### Q1: Does this violate quantum mechanics?
 
-No. The EQFE framework is fully compatible with quantum mechanics and respects all known physical bounds. See our [Tsirelson Bound Proof](tsirelson_bound_proof.html) for details.
+No. The EQFE framework is fully compatible with quantum mechanics and respects all known physical bounds. See our [Tsirelson Bound Proof]({{ site.baseurl }}/theory/tsirelson-bound-proof/) for details.
 
 ### Q2: How can noise be helpful?
 
@@ -78,6 +84,6 @@ The core mathematical principles are:
 
 ## Further Reading
 
-- [Amplification Law Derivation](amplification_law_derivation.html)
-- [Detailed Mathematical Treatment](detailed_amplification_derivation.html)
-- [Theoretical Enhancement Plan](theoretical_enhancement_plan.html)
+- [Amplification Law Derivation]({{ site.baseurl }}/theory/amplification-law-derivation/)
+- [Detailed Mathematical Treatment]({{ site.baseurl }}/theory/detailed-amplification-derivation/)
+- [Theoretical Enhancement Plan]({{ site.baseurl }}/theory/theoretical-enhancement-plan/)

@@ -1,3 +1,9 @@
+---
+layout: default
+title: Detailed Amplification Derivation
+permalink: /theory/detailed-amplification-derivation/
+---
+
 # Detailed Amplification Derivation
 
 This document provides an in-depth analysis of the EQFE Amplification Law with all mathematical steps fully explained.

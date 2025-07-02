@@ -1,3 +1,9 @@
+---
+layout: default
+title: Theoretical Enhancement Plan
+permalink: /theory/theoretical-enhancement-plan/
+---
+
 # Theoretical Enhancement Plan
 
 This document outlines the future directions for theoretical development of the EQFE framework.
@@ -85,7 +91,7 @@ This theoretical enhancement plan will:
 
 Interested theorists can:
 
-1. Review our [current framework](amplification_law_derivation.html)
+1. Review our [current framework]({{ site.baseurl }}/theory/amplification-law-derivation/)
 2. Identify areas for enhancement
 3. Propose specific improvements
 4. Join our collaborative effort
