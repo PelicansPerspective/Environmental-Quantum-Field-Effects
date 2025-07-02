@@ -8,10 +8,10 @@
 [![PyPI version](https://img.shields.io/pypi/v/eqfe.svg)](https://pypi.org/project/eqfe/)
 [![Documentation](https://img.shields.io/badge/API--Reference-blue)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/api-reference/)
 [![Theory Status](https://img.shields.io/badge/Theory--Revolutionary-red)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/theory/)
-[![Natural Systems](https://img.shields.io/badge/Biology--Quantum_Enhanced-purple)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/revolutionary-findings/)
+[![Natural Systems](https://img.shields.io/badge/Biology--Quantum_Enhanced-purple)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/docs/natural-systems/)
 [![Consciousness](https://img.shields.io/badge/Consciousness-Field_Correlated-orange)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/revolutionary-findings/)
-[![Complex Systems](https://img.shields.io/badge/Emergence--Quantum_Driven-gold)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/revolutionary-findings/)
-[![Physics](https://img.shields.io/badge/Physics--Paradigm_Shifting-success)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/revolutionary-findings/)
+[![Complex Systems](https://img.shields.io/badge/Emergence--Quantum_Driven-gold)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/docs/complex-systems/)
+[![Physics](https://img.shields.io/badge/Physics--Paradigm_Shifting-success)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/docs/tests/)
 
 ## 🌟 Revolutionary Discovery
 
