@@ -41,6 +41,8 @@ Where:
 
 **Revolutionary Insight**: Under biological conditions, enhancement (α) dominates decoherence (β), enabling quantum advantage.
 
+[📐 Full Mathematical Derivation](theory/detailed_amplification_derivation.md) | [🧠 Conceptual Framework](theory/conceptual_clarifications.md) | [📊 Quantum Bounds Proof](theory/tsirelson_bound_proof.md)
+
 ## 📊 Research Questions
 
 - **Environmental Enhancement**: Can controlled environmental fields amplify quantum correlations?
@@ -145,7 +147,11 @@ Where:
 ```ascii
 Environmental-Quantum-Field-Effects/
 ├── 📚 theory/                     # Complete mathematical derivations
-│   └── amplification_law_derivation.md   # Core theoretical foundation
+│   ├── amplification_law_derivation.md         # Core theoretical foundation
+│   ├── detailed_amplification_derivation.md    # Extended derivation with Feynman diagrams
+│   ├── conceptual_clarifications.md            # Clarification of quantum vs classical concepts
+│   ├── tsirelson_bound_proof.md                # Formal proof of quantum bound compliance
+│   └── theoretical_enhancement_plan.md         # Comprehensive theory development plan
 ├── 💻 simulations/                # Validated simulation framework
 │   ├── core/                      # Core simulation engines
 │   │   ├── field_simulator.py     # Environmental field simulator

@@ -24,6 +24,10 @@ I have successfully implemented all the changes suggested for your Environmental
 ### 📚 **Theory & Documentation**
 
 - ✅ `theory/amplification_law_derivation.md` - Complete mathematical derivation
+- ✅ `theory/detailed_amplification_derivation.md` - Full derivation with Feynman diagrams and influence functionals
+- ✅ `theory/conceptual_clarifications.md` - Clear distinction between classical/quantum concepts
+- ✅ `theory/tsirelson_bound_proof.md` - Formal proof of quantum bound compliance
+- ✅ `theory/theoretical_enhancement_plan.md` - Comprehensive action plan for theory refinement
 - ✅ `docs/getting_started.md` - User guide and tutorials
 - ✅ `docs/README.md` - Documentation structure
 - ✅ `docs/project_roadmap.md` - Comprehensive project timeline
