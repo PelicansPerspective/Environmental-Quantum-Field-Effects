@@ -124,12 +124,8 @@ class CHSHExperimentSimulator:
 
         # Physics validation
         validation_result = self.validator.validate_chsh_parameter(S_measured)
-        tsirelson_respected = validation_result.bounds_checked.get(
-            "tsirelson", True
-        )
-        classical_violation = validation_result.bounds_checked.get(
-            "quantum_advantage", False
-        )
+        tsirelson_respected = validation_result.get("tsirelson_bound_respected", True)
+        classical_violation = not validation_result.get("classical_bound_respected", True)
 
         if not tsirelson_respected:
             warnings.warn(
@@ -142,7 +138,7 @@ class CHSHExperimentSimulator:
             "S_measured": S_measured,  # Alias for compatibility
             "S_mean": np.mean(S_measured),
             "S_std": np.std(S_measured),
-            "S_sem": stats.sem(S_measured),
+            "S_sem": scipy_stats.sem(S_measured),
             "S_ideal": S_ideal,
             "env_field": env_field,
             "environmental_amplification": S_env_modified
