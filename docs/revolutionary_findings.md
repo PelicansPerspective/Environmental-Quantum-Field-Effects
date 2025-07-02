@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Revolutionary Findings in EQFE Research
+permalink: /revolutionary-findings/
 redirect_from:
   - /revolutionary_findings
   - /revolutionary_findings.html
