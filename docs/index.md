@@ -11,8 +11,8 @@ title: Environmental Quantum Field Effects
   <p>The Environmental Quantum Field Effects (EQFE) project explores this radical possibility through rigorous theoretical analysis, computational modeling, and experimental validation. We're not just studying quantum mechanics—we're discovering how nature itself has evolved to harness quantum field effects for enhanced information processing.</p>
   
   <div class="cta-buttons">
-    <a href="{{ '/getting_started.html' | relative_url }}" class="cta-btn">Get Started</a>
-    <a href="{{ '/project_roadmap.html' | relative_url }}" class="cta-btn">View Roadmap</a>
+    <a href="{{ '/getting_started' | relative_url }}" class="cta-btn">Get Started</a>
+    <a href="{{ '/project_roadmap' | relative_url }}" class="cta-btn">View Roadmap</a>
   </div>
 </div>
 
@@ -75,19 +75,19 @@ This **Quantum Correlation Amplification Law** predicts when and how environment
   <div class="feature-card">
     <h3>🔄 Multi-Scale Modeling</h3>
     <p>Our new multi-scale modeling framework bridges fundamental quantum field theory with observable effects across microscopic to macroscopic scales.</p>
-    <a href="multi_scale_framework.html" class="cta-btn">Learn More</a>
+    <a href="{{ '/multi_scale_framework' | relative_url }}" class="cta-btn">Learn More</a>
   </div>
   
   <div class="feature-card">
     <h3>🧪 Experimental Validation</h3>
     <p>We've developed a minimal viable experiment and rigorous falsification framework to provide clear pathways for testing EQFE predictions.</p>
-    <a href="experimental_validation.html" class="cta-btn">Learn More</a>
+    <a href="{{ '/experimental_validation' | relative_url }}" class="cta-btn">Learn More</a>
   </div>
   
   <div class="feature-card">
     <h3>🖥️ Advanced Simulations</h3>
     <p>New computational tools simulate quantum correlation enhancement across multiple parameter regimes with precise predictions.</p>
-    <a href="computational_tools.html" class="cta-btn">Learn More</a>
+    <a href="{{ '/computational_tools' | relative_url }}" class="cta-btn">Learn More</a>
   </div>
 </div>
 
@@ -101,7 +101,7 @@ This **Quantum Correlation Amplification Law** predicts when and how environment
     <div class="card-content">
       <h3 class="card-title">📚 Read the Theory</h3>
       <p>Dive into the mathematical foundations, from the basic derivation to advanced perturbation theory analysis.</p>
-      <a href="getting_started.html" class="cta-btn">Learn More</a>
+      <a href="{{ '/theory' | relative_url }}" class="cta-btn">Learn More</a>
     </div>
   </div>
   
@@ -110,7 +110,7 @@ This **Quantum Correlation Amplification Law** predicts when and how environment
     <div class="card-content">
       <h3 class="card-title">💻 Try the Simulations</h3>
       <p>Run our computational models and explore the parameter space yourself.</p>
-      <a href="project_roadmap.html" class="cta-btn">Get Started</a>
+      <a href="{{ '/computational_tools' | relative_url }}" class="cta-btn">Get Started</a>
     </div>
   </div>
   
@@ -119,7 +119,7 @@ This **Quantum Correlation Amplification Law** predicts when and how environment
     <div class="card-content">
       <h3 class="card-title">🔬 Experimental Protocols</h3>
       <p>Detailed instructions for testing EQFE predictions in the laboratory.</p>
-      <a href="experimental_validation.html" class="cta-btn">View Protocols</a>
+      <a href="{{ '/experimental_validation' | relative_url }}" class="cta-btn">View Protocols</a>
     </div>
   </div>
 </div>
@@ -136,8 +136,8 @@ This research is at the forefront of quantum physics, and we're looking for coll
   <div class="feature-card">
     <h3>🤝 For Researchers</h3>
     <ul>
-      <li>Review our <a href="getting_started.html">theoretical derivations</a></li>
-      <li>Test our <a href="project_roadmap.html">simulation code</a></li>
+      <li>Review our <a href="{{ '/theory' | relative_url }}">theoretical derivations</a></li>
+      <li>Test our <a href="{{ '/computational_tools' | relative_url }}">simulation code</a></li>
       <li>Propose experimental validations</li>
     </ul>
   </div>

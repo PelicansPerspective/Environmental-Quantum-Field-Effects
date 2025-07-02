@@ -30,19 +30,19 @@ nav_links:
     url: /
     icon: home
   - title: Documentation
-    url: /getting_started.html
+    url: /getting_started
     icon: book
   - title: Theory
-    url: /theory.html
+    url: /theory
     icon: square-root-alt
   - title: Roadmap
-    url: /project_roadmap.html
+    url: /project_roadmap
     icon: map
   - title: Visualizations
     url: /visualization_assets/
     icon: chart-line
   - title: Findings
-    url: /REVOLUTIONARY_FINDINGS.html
+    url: /REVOLUTIONARY_FINDINGS
     icon: lightbulb
   - title: GitHub
     url: https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects
