@@ -20,9 +20,9 @@ Traditional quantum information science treats the environment as an inevitable 
 **Principle:** Apply rapid control pulses to average out environmental effects
 
 **Mathematical Framework:**
-```math
+$$
 H_{eff} = \overline{H_0 + V(t)} = H_0 + \sum_n \frac{(-i)^n}{n!} \int_0^T dt_1 \cdots dt_n [V(t_1), [V(t_2), \cdots [V(t_n), H_0]]]
-```
+$$
 
 **Key Achievements:**
 - Coherence time extension by orders of magnitude
@@ -39,9 +39,9 @@ H_{eff} = \overline{H_0 + V(t)} = H_0 + \sum_n \frac{(-i)^n}{n!} \int_0^T dt_1 \
 **Principle:** Design environments with desired dissipative properties
 
 **Lindblad Master Equation:**
-```math
+$$
 \frac{d\rho}{dt} = -i[H, \rho] + \sum_k \gamma_k \left( L_k \rho L_k^\dagger - \frac{1}{2}\{L_k^\dagger L_k, \rho\} \right)
-```
+$$
 
 **Success Stories:**
 - Dissipative preparation of entangled states
@@ -60,9 +60,9 @@ H_{eff} = \overline{H_0 + V(t)} = H_0 + \sum_n \frac{(-i)^n}{n!} \int_0^T dt_1 \
 **Threshold Theorem:** Error correction possible if p < p_threshold ≈ 10⁻⁴
 
 **Stabilizer Formalism:**
-```math
+$$
 |\psi_L\rangle = \frac{1}{\sqrt{2^{n-k}}} \sum_{s \in S} s|\psi\rangle
-```
+$$
 
 **Achievements:**
 - Fault-tolerant quantum computation
@@ -79,9 +79,9 @@ H_{eff} = \overline{H_0 + V(t)} = H_0 + \sum_n \frac{(-i)^n}{n!} \int_0^T dt_1 \
 **Principle:** Exploit symmetries to find noise-immune subspaces
 
 **Condition for DFS:**
-```math
+$$
 [H_{\text{noise}}, \Pi_{\text{DFS}}] = 0
-```
+$$
 
 **Examples:**
 - Collective dephasing: |01⟩ - |10⟩ subspace
@@ -107,20 +107,20 @@ EQFE fundamentally reconceptualizes the environment:
 
 #### Quantum Field Coupling
 Starting from QFT first principles:
-```math
+$$
 H_{\text{int}} = g \int d^3x \psi^\dagger(x) \psi(x) \phi(x)
-```
+$$
 
 #### Perturbative Analysis
 Second-order enhancement versus fourth-order decoherence:
-```math
+$$
 \langle AB \rangle(t) = \langle AB \rangle_0 \exp\left[\underbrace{\alpha \langle\phi^2\rangle t}_{\text{Enhancement}} - \underbrace{\beta \int_0^t C(\tau) d\tau}_{\text{Decoherence}}\right]
-```
+$$
 
 #### Enhancement Condition
-```math
+$$
 \alpha \langle\phi^2\rangle > \beta \frac{dC}{dt}\bigg|_{t=0}
-```
+$$
 
 When α > β (initial slope), correlations temporarily increase.
 

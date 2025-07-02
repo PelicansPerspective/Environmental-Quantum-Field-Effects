@@ -61,15 +61,15 @@
 
 **Non-Markovian Master Equation**:
 
-```math
+$$
 dρ/dt = -i[H_s, ρ] + ∫₀ᵗ K(t-s)[L_α ρ(s) L_α† - ½{L_α†L_α, ρ(s)}]ds
-```
+$$
 
 **Enhancement Condition**:
 
-```math
+$$
 χ_enhanced(t) > χ_isolated(t)
-```
+$$
 
 **Key Parameters**:
 

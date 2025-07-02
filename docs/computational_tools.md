@@ -2,6 +2,10 @@
 
 The Environmental Quantum Field Effects (EQFE) framework now includes advanced simulation tools to model quantum correlation enhancement across multiple parameter regimes.
 
+## API Documentation
+
+For detailed information about using the computational tools and hardware interfaces, please refer to our [Complete API Reference](api_reference.html).
+
 ## Multi-Scale Simulation Framework
 
 Our new simulation framework bridges microscopic quantum field theory with experimentally observable effects through:
@@ -123,4 +127,4 @@ These computational tools provide testable predictions for experimental validati
   </form>
 </div>
 
-[View Example Code](https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects/blob/master/simulations/core/multi_scale_simulation.py)
+[View Example Code](../simulations/core/multi_scale_simulation.py)

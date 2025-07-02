@@ -23,9 +23,9 @@ Where:
 
 The interaction takes the form:
 
-```math
+$$
 H_int = g \int d^3x \phi(x,t) O(x,t)
-```
+$$
 
 Where:
 - **g**: Coupling strength

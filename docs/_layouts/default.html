@@ -79,6 +79,24 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
     <script src="{{ '/assets/js/eqfe-core.js?v=' | append: site.github.build_revision | relative_url }}" defer></script>
     <script src="{{ '/assets/js/eqfe-visualizations.js?v=' | append: site.github.build_revision | relative_url }}" defer></script>
+    
+    <!-- MathJax Configuration -->
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']],
+          processEscapes: true,
+          processEnvironments: true
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
   </head>
   <body>
     <section class="page-header">
@@ -90,6 +108,7 @@
           <a href="{{ '/' | relative_url }}" class="btn"><i class="fas fa-home"></i> Home</a>
           <a href="{{ '/getting_started' | relative_url }}" class="btn"><i class="fas fa-book"></i> Documentation</a>
           <a href="{{ '/theory' | relative_url }}" class="btn"><i class="fas fa-square-root-alt"></i> Theory</a>
+          <a href="{{ '/api_reference' | relative_url }}" class="btn"><i class="fas fa-code"></i> API</a>
           <a href="{{ '/project_roadmap' | relative_url }}" class="btn"><i class="fas fa-map"></i> Roadmap</a>
           <a href="{{ '/visualization_assets/' | relative_url }}" class="btn"><i class="fas fa-chart-line"></i> Visualizations</a>
           <a href="{{ '/REVOLUTIONARY_FINDINGS' | relative_url }}" class="btn"><i class="fas fa-lightbulb"></i> Findings</a>

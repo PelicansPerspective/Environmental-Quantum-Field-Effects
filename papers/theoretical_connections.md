@@ -12,9 +12,9 @@ This document explores the profound theoretical connections between Environmenta
 
 EQFE suggests that environmental structure can temporarily increase the effective channel capacity of quantum communication systems. The mutual information between quantum systems A and B can be enhanced through environmental mediation:
 
-```math
+$$
 I(A:B|E) = S(\rho_A) + S(\rho_B) - S(\rho_{AB}) + \Delta I_{EQFE}
-```
+$$
 
 Where ΔI_EQFE represents the environmental contribution to mutual information.
 
@@ -30,9 +30,9 @@ Where ΔI_EQFE represents the environmental contribution to mutual information.
 
 EQFE environments might naturally implement approximate quantum error correction through correlation enhancement:
 
-```math
+$$
 \mathcal{E}_{EQFE}(\rho) = \sum_i K_i \rho K_i^\dagger
-```
+$$
 
 Where Kraus operators K_i encode both decoherence and enhancement effects.
 
@@ -48,9 +48,9 @@ Where Kraus operators K_i encode both decoherence and enhancement effects.
 
 The Fisher information matrix in EQFE-enhanced systems shows potential improvements:
 
-```math
+$$
 F_{ij}^{EQFE} = \text{Tr}\left[\rho \left(\frac{\partial^2 \ln \rho}{\partial \theta_i \partial \theta_j}\right)\right] + \Delta F_{ij}^{env}
-```
+$$
 
 **Applications:**
 
@@ -66,9 +66,9 @@ F_{ij}^{EQFE} = \text{Tr}\left[\rho \left(\frac{\partial^2 \ln \rho}{\partial \t
 
 EQFE principles extend to many-body systems where collective modes can be enhanced:
 
-```math
+$$
 H_{EQFE} = \sum_i H_i + \sum_{i<j} V_{ij} + \sum_i \lambda_i O_i \phi(x_i,t)
-```
+$$
 
 **Emergent Phenomena:**
 - Quantum phase transitions driven by environmental structure
@@ -81,9 +81,9 @@ H_{EQFE} = \sum_i H_i + \sum_{i<j} V_{ij} + \sum_i \lambda_i O_i \phi(x_i,t)
 
 Environmental correlations can enhance quantum transport efficiency:
 
-```math
+$$
 J_{EQFE} = \frac{d}{dt}\langle x \rangle = \text{Tr}[\rho \dot{x}] + J_{env}
-```
+$$
 
 **Biological Implications:**
 - Enhanced energy transfer in photosynthesis
@@ -96,9 +96,9 @@ J_{EQFE} = \frac{d}{dt}\langle x \rangle = \text{Tr}[\rho \dot{x}] + J_{env}
 
 EQFE operates in non-equilibrium regimes where environmental work can enhance correlations:
 
-```math
+$$
 \Delta S = \Delta S_{thermal} + \Delta S_{EQFE}
-```
+$$
 
 **Research Questions:**
 - Thermodynamic cost of correlation enhancement
@@ -113,9 +113,9 @@ EQFE operates in non-equilibrium regimes where environmental work can enhance co
 
 In curved spacetime, the environmental field propagator becomes:
 
-```math
+$$
 \langle \phi(x) \phi(x') \rangle = \frac{1}{(2\pi)^4} \int d^4k \frac{e^{-ik(x-x')}}{k^2 + m^2} \sqrt{-g(x)g(x')}
-```
+$$
 
 **Implications:**
 - Enhanced correlations near gravitational sources
@@ -128,9 +128,9 @@ In curved spacetime, the environmental field propagator becomes:
 
 EQFE must respect gauge invariance in electromagnetic systems:
 
-```math
+$$
 \phi(x) \to \phi(x) + \partial_\mu \Lambda(x)
-```
+$$
 
 **Consequences:**
 - Gauge-invariant correlation functions
@@ -143,9 +143,9 @@ EQFE must respect gauge invariance in electromagnetic systems:
 
 EQFE principles might apply to strong interactions:
 
-```math
+$$
 \mathcal{L}_{EQFE-QCD} = \mathcal{L}_{QCD} + \lambda \bar{\psi} \gamma_\mu \psi A^\mu \phi
-```
+$$
 
 **Speculative Applications:**
 - Confinement enhancement in QCD
@@ -160,9 +160,9 @@ EQFE principles might apply to strong interactions:
 
 Natural selection might have optimized biological systems for EQFE:
 
-```math
+$$
 \text{Fitness} = f(\text{metabolic efficiency}, \text{quantum enhancement})
-```
+$$
 
 **Observable Consequences:**
 - Quantum effects in photosynthesis
@@ -175,9 +175,9 @@ Natural selection might have optimized biological systems for EQFE:
 
 EQFE might assist protein folding through environmental correlations:
 
-```math
+$$
 \Delta G_{fold} = \Delta G_{classical} + \Delta G_{EQFE}
-```
+$$
 
 **Research Directions:**
 - Quantum tunneling in protein dynamics
@@ -192,9 +192,9 @@ EQFE might assist protein folding through environmental correlations:
 
 EQFE provides a potential mechanism for consciousness theories:
 
-```math
+$$
 \Psi = \sum_i c_i |\psi_i\rangle \to \text{collapse via EQFE}
-```
+$$
 
 **Implications:**
 - Microtubule quantum processing
@@ -207,9 +207,9 @@ EQFE provides a potential mechanism for consciousness theories:
 
 EQFE might enhance information integration in neural networks:
 
-```math
+$$
 \Phi = \sum_{i,j} I(X_i : X_j | \text{EQFE context})
-```
+$$
 
 **Applications:**
 - Quantum models of integrated information

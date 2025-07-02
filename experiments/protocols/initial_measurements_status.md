@@ -51,9 +51,9 @@ Preliminary measurements at room temperature show promising indications of envir
 
 While this enhancement is small, it is statistically significant (p < 0.01) and consistent with the theoretical prediction for the chosen parameters:
 
-```math
+$$
 A(φ₀) = exp[α⟨φ²⟩t - β∫₀ᵗ C(τ) dτ] ≈ 1.008
-```
+$$
 
 ## Next Steps
 

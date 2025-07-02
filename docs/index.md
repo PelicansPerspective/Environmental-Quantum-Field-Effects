@@ -28,9 +28,9 @@ Our research reveals that **specific environmental conditions can temporarily am
 
 At the heart of our theory lies a deceptively simple equation:
 
-```math
+$$
 A(\phi,t) = \exp\left[\alpha\langle\phi^2\rangle t - \beta\int_0^t C(\tau) d\tau\right]
-```
+$$
 
 This **Quantum Correlation Amplification Law** predicts when and how environmental fields can enhance rather than degrade quantum correlations. The key insight? Under certain conditions, the enhancement term (α) can dominate the decoherence term (β), creating windows of quantum advantage.
 

@@ -47,7 +47,23 @@ We welcome contributions from researchers across multiple disciplines:
 
 ## 📋 Getting Started
 
-### 1. **Environment Setup**
+### 1. Environment Setup
+
+#### Using Docker (Recommended)
+
+For a fully reproducible environment, we recommend using Docker. This ensures that all dependencies and configurations are identical for all contributors.
+
+```bash
+# Build the Docker image
+docker build -t eqfe .
+
+# Run the Docker container
+docker run -it -p 8888:8888 eqfe
+```
+
+#### Local Setup
+
+If you prefer to set up a local environment, follow these steps:
 
 ```bash
 # Clone the repository
@@ -58,7 +74,7 @@ cd Environmental-Quantum-Field-Effects
 pip install -r requirements.txt
 
 # Run validation tests
-python -m pytest tests/ -v
+pytest
 
 # Quick functionality check
 python quick_test.py
@@ -73,27 +89,46 @@ Before contributing, please review:
 - **docs/getting_started.md** - Detailed setup and usage guide
 - **papers/eqfe_preprint.md** - Complete technical documentation
 
-### 3. **Development Workflow**
+### 3. Development Workflow
 
-```bash
-# Create a feature branch
-git checkout -b feature/your-contribution-name
+When contributing, please follow these steps:
 
-# Make your changes with proper testing
-# ... develop and test ...
+1. **Create a new issue:** Before starting your work, create a new issue on GitHub to discuss your proposed changes. This allows us to coordinate efforts and provide feedback.
+2. **Fork the repository:** Create a fork of the repository to your own GitHub account.
+3. **Create a feature branch:**
 
-# Run comprehensive tests
-make test
+   ```bash
+   git checkout -b feature/your-contribution-name
+   ```
 
-# Validate physics compliance
-python validate_framework.py
+4. **Make your changes:** Make your changes to the code and add tests to cover your changes.
+5. **Run the full test suite:** Before submitting your changes, make sure to run the full test suite and ensure that all tests pass.
 
-# Commit with descriptive messages
-git commit -m "Add: Brief description of your contribution"
+   ```bash
+   make test
+   ```
 
-# Push and create pull request
-git push origin feature/your-contribution-name
-```
+6. **Format your code:** Ensure your code is formatted according to the project's style guidelines.
+
+   ```bash
+   black .
+   isort .
+   ```
+
+7. **Commit your changes:** Commit your changes with a descriptive commit message.
+
+   ```bash
+   git commit -m "feat: Brief description of your contribution"
+   ```
+
+   We follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification.
+8. **Push your changes:**
+
+   ```bash
+   git push origin feature/your-contribution-name
+   ```
+
+9. **Create a pull request:** Open a pull request from your feature branch to the `main` branch of the main repository.
 
 ## 🧪 **Contribution Types**
 

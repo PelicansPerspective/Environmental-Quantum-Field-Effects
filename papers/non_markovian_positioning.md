@@ -10,9 +10,9 @@ This document positions Environmental Quantum Field Effects within the specific 
 
 Non-Markovian quantum dynamics emerges when environmental memory effects become significant, characterized by the time-local master equation:
 
-```math
+$$
 \frac{d\rho(t)}{dt} = -i[H_S(t), \rho(t)] + \int_0^t dt' K(t,t') \mathcal{L}[t'] \rho(t')
-```
+$$
 
 Where K(t,t') is the memory kernel encoding environmental correlations.
 
@@ -27,9 +27,9 @@ Where K(t,t') is the memory kernel encoding environmental correlations.
 
 **Definition**: Non-Markovianity quantified by trace distance increase:
 
-```math
+$$
 \mathcal{N}_{RHP} = \max_{\rho_1(0), \rho_2(0)} \int_{\sigma>0} dt \sigma(t)
-```
+$$
 
 Where σ(t) = d/dt D(ρ₁(t), ρ₂(t)) and D is the trace distance.
 
@@ -37,9 +37,9 @@ Where σ(t) = d/dt D(ρ₁(t), ρ₂(t)) and D is the trace distance.
 
 **Criterion**: Non-Markovianity occurs when dynamical map loses complete positivity:
 
-```math
+$$
 \Phi_{t,s} = \mathcal{T} \exp\left[\int_s^t dt' \mathcal{K}(t')\right]
-```
+$$
 
 Fails to be completely positive when eigenvalues of generator become positive.
 
@@ -47,9 +47,9 @@ Fails to be completely positive when eigenvalues of generator become positive.
 
 **Measure**: Information flow from system to environment:
 
-```math
+$$
 \mathcal{N}_{LWS} = \int_{I(t,\rho_\theta)>0} dt I(t,\rho_\theta)
-```
+$$
 
 Where I(t,ρ_θ) is the time derivative of Fisher information.
 
@@ -66,9 +66,9 @@ Traditional non-Markovian studies focus on **recovery** of lost quantum properti
 
 The EQFE enhancement mechanism explicitly utilizes environmental memory:
 
-```math
+$$
 A(\phi,t) = \exp\left[\alpha\langle\phi^2\rangle t - \beta\int_0^t C(\tau) d\tau\right]
-```
+$$
 
 Where C(τ) is the environmental correlation function encoding memory effects.
 
@@ -122,9 +122,9 @@ Where C(τ) is the environmental correlation function encoding memory effects.
 
 **Principle**: Apply control pulses to average out environmental effects
 **Mathematical Framework**:
-```math
+$$
 U_{DD}(T) = \mathcal{T} \exp\left[-i \int_0^T dt H_{eff}(t)\right]
-```
+$$
 
 **Achievements**:
 - Coherence time extension by orders of magnitude
@@ -137,9 +137,9 @@ U_{DD}(T) = \mathcal{T} \exp\left[-i \int_0^T dt H_{eff}(t)\right]
 
 **Principle**: Optimize environmental coupling for correlation enhancement
 **Mathematical Framework**:
-```math
+$$
 U_{EQFE}(T) = \exp\left[-i \int_0^T dt (H_S + H_I(t) + H_E)\right]
-```
+$$
 
 **Advantages**:
 - Passive enhancement without active control
@@ -162,9 +162,9 @@ U_{EQFE}(T) = \exp\left[-i \int_0^T dt (H_S + H_I(t) + H_E)\right]
 - Engineered reservoirs (Poyatos et al., 1996)
 
 **Lindblad Form**:
-```math
+$$
 \mathcal{L}[\rho] = \sum_k \gamma_k \left( L_k \rho L_k^\dagger - \frac{1}{2}\{L_k^\dagger L_k, \rho\} \right)
-```
+$$
 
 **Limitations**:
 - Restricted to steady-state enhancement

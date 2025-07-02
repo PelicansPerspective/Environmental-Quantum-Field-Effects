@@ -61,9 +61,9 @@ This reversal has profound implications for:
 
 EQFE emerges from standard QFT principles:
 
-```math
+$$
 \langle \psi_1 \psi_2 | \phi(x) \phi(y) | \psi_1 \psi_2 \rangle = \int d^4k \frac{e^{-ik(x-y)}}{k^2 + m^2}
-```
+$$
 
 **No new physics required**: EQFE utilizes established field correlations
 
@@ -71,9 +71,9 @@ EQFE emerges from standard QFT principles:
 
 The enhancement mechanism exploits memory effects:
 
-```math
+$$
 \frac{d\rho}{dt} = -i[H_S, \rho] + \int_0^t K(t-s) \mathcal{L}[s] ds
-```
+$$
 
 **Key innovation**: Optimization of memory kernel K(t-s)
 
@@ -119,9 +119,9 @@ EQFE bridges:
 
 **Fundamental limitation**: Enhancement is temporary
 
-```math
+$$
 A(t) = \exp[\alpha t - \beta \int_0^t C(\tau) d\tau]
-```
+$$
 
 - Enhancement peaks at finite time t_opt
 - Eventually succumbs to decoherence

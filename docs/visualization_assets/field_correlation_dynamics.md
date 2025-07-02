@@ -13,15 +13,15 @@ This document provides visualizations of the environmental field correlation dyn
 
 The field correlation function C(τ) characterizes the memory of the environmental field:
 
-```math
+$$
 C(\tau) = \langle\phi(x,t)\phi(x,t+\tau)\rangle
-```
+$$
 
 This function decays with characteristic time τ_c, which depends inversely on the effective field mass:
 
-```math
+$$
 \tau_c \propto \frac{1}{m}
-```
+$$
 
 ## 2. Correlation Function Visualization
 

@@ -5,6 +5,7 @@
 [![Build Status](https://github.com/justin-todd/Environmental-Quantum-Field-Effects/workflows/CI/badge.svg)](https://github.com/justin-todd/Environmental-Quantum-Field-Effects/actions)
 [![Coverage Status](https://codecov.io/gh/justin-todd/Environmental-Quantum-Field-Effects/branch/main/graph/badge.svg)](https://codecov.io/gh/justin-todd/Environmental-Quantum-Field-Effects)
 [![PyPI version](https://badge.fury.io/py/eqfe.svg)](https://badge.fury.io/py/eqfe)
+[![Documentation](https://img.shields.io/badge/API-Reference-blue)](./docs/api_reference.md)
 [![Theory Status](https://img.shields.io/badge/Theory-Revolutionary-red)](./theory/)
 [![Natural Systems](https://img.shields.io/badge/Biology-Quantum_Enhanced-purple)](./natural_systems/)
 [![Consciousness](https://img.shields.io/badge/Consciousness-Field_Correlated-orange)](./REVOLUTIONARY_FINDINGS.md)
@@ -37,9 +38,9 @@ This repository bridges physics, neuroscience, and philosophical speculation to 
 
 **The Quantum Correlation Amplification Law:**
 
-```math
+$$
 A(φ,t) = exp[α⟨φ²⟩t - β∫₀ᵗ C(τ) dτ]
-```
+$$
 
 [📊 View Amplification Mechanism Diagrams](docs/visualization_assets/amplification_mechanism.md)
 

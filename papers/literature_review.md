@@ -10,9 +10,9 @@ The Environmental Quantum Field Effects (EQFE) framework represents a novel appr
 
 The study of open quantum systems has been extensively developed since the pioneering work of Davies (1974) and Lindblad (1976), with master equations describing the evolution of quantum systems coupled to thermal environments:
 
-```math
+$$
 \frac{d\rho}{dt} = -i[H_S, \rho] + \sum_k \gamma_k \left( L_k \rho L_k^\dagger - \frac{1}{2}\{L_k^\dagger L_k, \rho\} \right)
-```
+$$
 
 **Key References:**
 - Breuer & Petruccione (2002): *The Theory of Open Quantum Systems*
@@ -47,9 +47,9 @@ Recent developments recognize memory effects when τ_env ≈ τ_sys:
 - **Uhrig Dynamical Decoupling** (Uhrig, 2007): Optimized pulse spacing
 
 **Mathematical Framework:**
-```math
+$$
 U_{DD}(t) = \prod_{k=1}^n U_k e^{-iH_0 t_k/\hbar}
-```
+$$
 
 **Limitations:**
 - Requires active control and fast switching
@@ -66,9 +66,9 @@ U_{DD}(t) = \prod_{k=1}^n U_k e^{-iH_0 t_k/\hbar}
 - **Autonomous Error Correction** (Kapit, 2016)
 
 **Example - Dissipative Entanglement Generation:**
-```math
+$$
 \mathcal{L}[\rho] = \gamma \left( |\psi_+\rangle\langle\psi_+| \rho |\psi_+\rangle\langle\psi_+| - \rho \right)
-```
+$$
 
 **Achievements:**
 - Steady-state entanglement generation
@@ -91,9 +91,9 @@ U_{DD}(t) = \prod_{k=1}^n U_k e^{-iH_0 t_k/\hbar}
 **Principle:** Identify symmetry-protected subspaces immune to decoherence.
 
 **Mathematical Condition:**
-```math
+$$
 [H_I, P] = 0 \quad \text{for projector } P \text{ onto DFS}
-```
+$$
 
 **Examples:**
 - Collective decoherence (Zanardi & Rasetti, 1997)
@@ -119,18 +119,18 @@ U_{DD}(t) = \prod_{k=1}^n U_k e^{-iH_0 t_k/\hbar}
 
 Unlike traditional approaches treating environments as structureless thermal baths, EQFE exploits:
 
-```math
+$$
 \langle \phi(x,t) \phi(x',t') \rangle = \frac{1}{(2\pi)^4} \int d^4k \frac{e^{-ik(x-x')}}{k^2 + m^2} f(k,\omega)
-```
+$$
 
 Where f(k,ω) encodes environmental spectral structure.
 
 #### 2. Non-Markovian Enhancement Mechanism
 
 The EQFE amplification law:
-```math
+$$
 A(\phi,t) = \exp\left[\alpha\langle\phi^2\rangle t - \beta\int_0^t C(\tau) d\tau\right]
-```
+$$
 
 Emerges from the balance between:
 - **Enhancement term**: α∆⟨φ²⟩ (second-order in coupling)
@@ -139,9 +139,9 @@ Emerges from the balance between:
 #### 3. Parameter Regimes
 
 **Enhancement Condition:**
-```math
+$$
 \alpha \langle\phi^2\rangle > \beta \frac{dC}{dt}\bigg|_{t=0}
-```
+$$
 
 This occurs when:
 - Environmental field variance is large

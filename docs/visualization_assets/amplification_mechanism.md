@@ -21,9 +21,9 @@ The amplification process relies on constructive interference between quantum sy
 
 The amplification factor is mathematically expressed as:
 
-```math
+$$
 A(φ,t) = \exp\left[\alpha\langle\phi^2\rangle t - \beta\int_0^t C(\tau) d\tau\right]
-```
+$$
 
 Where:
 

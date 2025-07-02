@@ -47,11 +47,13 @@ Instead of protecting quantum systems from the environment, EQFE exploits struct
 
 **Mathematical Framework**:
 
-```math
-Master Equation: dρ/dt = -i[H_s, ρ] + L_env[ρ]
-Enhancement Condition: χ_enhanced > χ_isolated
-Optimal Parameters: λ ∈ [0.1, 0.3], T ∈ [285, 295] K
-```
+$$
+\begin{align}
+\text{Master Equation:} & \quad \frac{d\rho}{dt} = -i[H_s, \rho] + L_{env}[\rho] \\
+\text{Enhancement Condition:} & \quad \chi_{enhanced} > \chi_{isolated} \\
+\text{Optimal Parameters:} & \quad \lambda \in [0.1, 0.3], \quad T \in [285, 295] \text{ K}
+\end{align}
+$$
 
 ### **Key Features and Advantages**
 

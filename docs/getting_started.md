@@ -32,6 +32,7 @@ Before running simulations, familiarize yourself with our theoretical foundation
 - [Multi-Scale Modeling Framework](multi_scale_framework.html) - Our hierarchical approach connecting quantum field theory to observable effects
 - [Experimental Validation Framework](experimental_validation.html) - Protocols for testing EQFE predictions
 - [Computational Tools](computational_tools.html) - Advanced simulation capabilities
+- [API Reference](api_reference.html) - Complete API documentation and usage examples
 
 ### Basic Simulation
 
