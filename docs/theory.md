@@ -54,4 +54,4 @@ For more detailed mathematical derivations and theoretical analysis, please see:
 
 ## Interactive Visualizations
 
-To explore how these equations translate into observable effects, please visit our [visualization gallery]({{ site.baseurl }}/visualization_assets/).
+To explore how these equations translate into observable effects, please visit our [visualization gallery]({{ site.baseurl }}/visualization-assets/).

@@ -39,7 +39,7 @@ nav_links:
     url: /project_roadmap
     icon: map
   - title: Visualizations
-    url: /visualization_assets/
+    url: /visualization-assets/
     icon: chart-line
   - title: Findings
     url: /REVOLUTIONARY_FINDINGS

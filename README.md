@@ -42,7 +42,7 @@ $$
 A(φ,t) = exp[α⟨φ²⟩t - β∫₀ᵗ C(τ) dτ]
 $$
 
-[📊 View Amplification Mechanism Diagrams](docs/visualization_assets/amplification_mechanism.md)
+[📊 View Amplification Mechanism Diagrams](docs/visualization-assets/amplification-mechanism)
 
 Where:
 
@@ -79,7 +79,7 @@ Where:
 3. **Mass Dependence**: Correlation time τ_c ∝ 1/m determines dynamics
 4. **Coupling Scaling**: Enhancement ∝ g², decoherence ∝ g⁴
 
-[📈 View Field Correlation Dynamics](docs/visualization_assets/field_correlation_dynamics.md)
+[📈 View Field Correlation Dynamics](docs/visualization-assets/field-correlation-dynamics)
 
 ## 🧪 Experimental Program
 
@@ -198,7 +198,7 @@ Environmental-Quantum-Field-Effects/
 │   ├── getting_started.md         # Onboarding documentation
 │   ├── project_roadmap.md         # Timeline and milestones
 │   ├── README.md                  # Documentation index
-│   └── visualization_assets/      # Visual diagrams and schematics
+│   └── visualization-assets/      # Visual diagrams and schematics
 │       ├── amplification_mechanism.md  # Amplification process diagrams
 │       └── field_correlation_dynamics.md  # Field correlation visualizations
 ├── README.md                      # Project overview
