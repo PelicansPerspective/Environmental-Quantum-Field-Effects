@@ -1,8 +1,8 @@
 """
 Natural Systems Quantum Analysis
 
-Comprehensive analysis script for exploring quantum field effects
-in natural systems, from cellular structures to consciousness.
+Comprehensive analysis script for exploring environmental quantum field effects
+in natural systems, from cellular structures to complex biological networks.
 
 This script integrates all natural systems modules to provide
 a complete picture of how environmental quantum field effects
