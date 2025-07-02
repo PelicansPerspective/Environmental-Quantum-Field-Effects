@@ -268,6 +268,10 @@ We welcome collaborations from:
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 
+**Contact**: Justin Todd, <justin@pelicansperspective.com>  
+**Organization**: Pelicans Perspective  
+**Collaboration**: See [collaboration/](./collaboration/) for partnership opportunities
+
 ## 📝 Citation
 
 If you use this work, please cite:
@@ -275,9 +279,10 @@ If you use this work, please cite:
 ```bibtex
 @software{EQFE2025,
   title={Environmental Quantum Field Effects: Amplification Law and Experimental Framework},
-  author={[Authors]},
+  author={Justin Todd},
+  organization={Pelicans Perspective},
   year={2025},
-  url={https://github.com/[username]/Environmental-Quantum-Field-Effects}
+  url={https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects}
 }
 ```
 
@@ -290,6 +295,11 @@ This project is licensed under the MIT License - see [LICENSE](./LICENSE) for de
 - Standard quantum field theory and Bell test foundations
 - Quantum optics community for experimental frameworks
 - Open source scientific computing ecosystem
+
+**Principal Investigator**: Justin Todd  
+**Organization**: Pelicans Perspective  
+**Contact**: <justin@pelicansperspective.com>  
+**Repository**: <https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects>
 
 ---
 

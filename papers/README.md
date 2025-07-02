@@ -65,16 +65,18 @@ The quantum foundations analysis (`quantum_foundations_analysis.md`) provides cr
 
 ### Scientific Evolution
 
-All documents emphasize the progression from the fatally flawed Consciousness-Field Hypothesis (CFH) to the rigorously physics-compliant EQFE framework. This evolution demonstrates how bold speculation can catalyze legitimate science when subjected to mathematical discipline and experimental accountability.
+## 📞 Contact Information
 
-### Theoretical Rigor
+**Principal Investigator**: Justin Todd  
+**Organization**: Pelicans Perspective  
+**Email**: <justin@pelicansperspective.com>  
+**Repository**: <https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects>
 
-EQFE maintains strict adherence to:
+For collaboration inquiries, please see [collaboration/](../collaboration/) directory.
 
-- Quantum mechanical bounds (Tsirelson's bound)
-- Relativistic causality
-- Dimensional consistency
-- Experimental testability
+---
+
+*"The Environmental Quantum Field Effects framework represents not just a technical innovation, but a fundamental shift in how we understand the relationship between quantum systems and their environments. By moving from protection to partnership, we open new possibilities for quantum technology and deepen our understanding of the quantum nature of reality itself."* - Justin Todd, Pelicans Perspective
 
 ### Falsifiability
 
