@@ -40,5 +40,5 @@ We have also developed a comprehensive scientific falsification framework to ens
 
 This approach establishes EQFE as a properly scientific theory with specific, testable predictions and clearly defined falsification criteria.
 
-[Learn More - Minimal Viable Experiment](../experiments/protocols/minimal_viable_experiment.md)  
-[Learn More - Falsification Framework](../theory/falsification_framework.md)
+[Learn More - Minimal Viable Experiment]({{ site.baseurl }}/experiments/protocols/minimal-viable-experiment/)
+<!-- Falsification framework documentation coming soon -->
