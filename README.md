@@ -5,12 +5,12 @@
 [![Build Status](https://github.com/justin-todd/Environmental-Quantum-Field-Effects/workflows/CI/badge.svg)](https://github.com/justin-todd/Environmental-Quantum-Field-Effects/actions)
 [![Coverage Status](https://codecov.io/gh/justin-todd/Environmental-Quantum-Field-Effects/branch/main/graph/badge.svg)](https://codecov.io/gh/justin-todd/Environmental-Quantum-Field-Effects)
 [![PyPI version](https://badge.fury.io/py/eqfe.svg)](https://badge.fury.io/py/eqfe)
-[![Documentation](https://img.shields.io/badge/API-Reference-blue)](./docs/api_reference.md)
-[![Theory Status](https://img.shields.io/badge/Theory-Revolutionary-red)](./theory/)
-[![Natural Systems](https://img.shields.io/badge/Biology-Quantum_Enhanced-purple)](./natural_systems/)
-[![Consciousness](https://img.shields.io/badge/Consciousness-Field_Correlated-orange)](./REVOLUTIONARY_FINDINGS.md)
-[![Complex Systems](https://img.shields.io/badge/Emergence-Quantum_Driven-gold)](./complex_systems/)
-[![Physics](https://img.shields.io/badge/Physics-Paradigm_Shifting-success)](./tests/)
+[![Documentation](https://img.shields.io/badge/API-Reference-blue)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/api-reference/)
+[![Theory Status](https://img.shields.io/badge/Theory-Revolutionary-red)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/theory/)
+[![Natural Systems](https://img.shields.io/badge/Biology-Quantum_Enhanced-purple)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/natural-systems/)
+[![Consciousness](https://img.shields.io/badge/Consciousness-Field_Correlated-orange)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/revolutionary-findings/)
+[![Complex Systems](https://img.shields.io/badge/Emergence-Quantum_Driven-gold)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/complex-systems/)
+[![Physics](https://img.shields.io/badge/Physics-Paradigm_Shifting-success)](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/tests/)
 
 ## 🌟 Revolutionary Discovery
 
@@ -42,7 +42,7 @@ $$
 A(φ,t) = exp[α⟨φ²⟩t - β∫₀ᵗ C(τ) dτ]
 $$
 
-[📊 View Amplification Mechanism Diagrams](docs/visualization-assets/amplification-mechanism)
+[📊 View Amplification Mechanism Diagrams](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/visualization-assets/amplification-mechanism/)
 
 Where:
 
@@ -53,7 +53,7 @@ Where:
 
 **Revolutionary Insight**: Under biological conditions, enhancement (α) dominates decoherence (β), enabling quantum advantage.
 
-[📐 Full Mathematical Derivation](theory/detailed_amplification_derivation.md) | [🧠 Conceptual Framework](theory/conceptual_clarifications.md) | [📊 Quantum Bounds Proof](theory/tsirelson_bound_proof.md)
+[📐 Full Mathematical Derivation](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/theory/detailed-amplification-derivation/) | [🧠 Conceptual Framework](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/theory/conceptual-clarifications/) | [📊 Quantum Bounds Proof](https://pelicansperspective.github.io/Environmental-Quantum-Field-Effects/theory/tsirelson-bound-proof/)
 
 ## 📊 Research Questions
 
