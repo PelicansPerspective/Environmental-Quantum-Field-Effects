@@ -23,8 +23,8 @@ Where:
 
 The interaction takes the form:
 
-```
-H_int = g ∫ d³x φ(x,t) O(x,t)
+```math
+H_int = g \int d^3x \phi(x,t) O(x,t)
 ```
 
 Where:

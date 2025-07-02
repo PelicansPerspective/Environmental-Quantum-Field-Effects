@@ -38,7 +38,11 @@ gantt
 | Milestone | Completion Date | Status | Deliverables |
 |-----------|-----------------|--------|-------------|
 | Theoretical Framework | Mar 15, 2025 | ✅ Complete | `theory/amplification_law_derivation.md` |
+| Multi-scale Framework | May 15, 2025 | ✅ Complete | `theory/multi_scale_modeling_framework.md` |
 | Simulation Implementation | May 1, 2025 | ✅ Complete | `simulations/core/field_simulator.py` |
+| Advanced Simulations | Jun 15, 2025 | ✅ Complete | `simulations/core/multi_scale_simulation.py` |
+| Falsification Framework | Jul 1, 2025 | ✅ Complete | `theory/falsification_framework.md` |
+| Minimal Viable Experiment | Jul 1, 2025 | ✅ Complete | `experiments/protocols/minimal_viable_experiment.md` |
 | Physics Bounds Validation | Jun 1, 2025 | ✅ Complete | `tests/test_physics_validation.py` |
 | Initial Lab Measurements | Aug 1, 2025 | ⏳ In Progress | Experimental data & analysis report |
 

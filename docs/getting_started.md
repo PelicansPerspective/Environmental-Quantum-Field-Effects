@@ -25,12 +25,21 @@ title: Getting Started with EQFE
 
 ## Quick Start
 
+## Theory and Frameworks
+
+Before running simulations, familiarize yourself with our theoretical foundations:
+
+- [Multi-Scale Modeling Framework](multi_scale_framework.html) - Our hierarchical approach connecting quantum field theory to observable effects
+- [Experimental Validation Framework](experimental_validation.html) - Protocols for testing EQFE predictions
+- [Computational Tools](computational_tools.html) - Advanced simulation capabilities
+
 ### Basic Simulation
 
 ```python
 from simulations.core import EnvironmentalFieldSimulator, CHSHExperimentSimulator
+from simulations.core.multi_scale_simulation import EnvironmentalCorrelation, OpenQuantumSystem
 
-# Create environmental field simulator
+# Option 1: Traditional Field Simulator
 env_sim = EnvironmentalFieldSimulator(
     field_mass=1e-6,        # 1 μeV
     coupling_strength=1e-3,  # Weak coupling
@@ -43,6 +52,18 @@ chsh_sim = CHSHExperimentSimulator(env_sim)
 # Run simulation
 results = chsh_sim.simulate_bell_experiment(n_trials=10000)
 print(f"CHSH parameter: {results['S_mean']:.4f} ± {results['S_std']:.4f}")
+
+# Option 2: Advanced Multi-scale Simulator
+env = EnvironmentalCorrelation(
+    correlation_type='structured',
+    correlation_time=2.0,
+    coupling_strength=0.1,
+    temperature=0.1
+)
+
+# Create demonstration of quantum correlation enhancement
+amplifier = QuantumCorrelationAmplifier()
+results = amplifier.demonstrate_eqfe()
 ```
 
 ### Parameter Optimization

@@ -29,7 +29,7 @@ Our research reveals that **specific environmental conditions can temporarily am
 At the heart of our theory lies a deceptively simple equation:
 
 ```math
-A(φ,t) = exp[α⟨φ²⟩t - β∫₀ᵗ C(τ) dτ]
+A(\phi,t) = \exp\left[\alpha\langle\phi^2\rangle t - \beta\int_0^t C(\tau) d\tau\right]
 ```
 
 This **Quantum Correlation Amplification Law** predicts when and how environmental fields can enhance rather than degrade quantum correlations. The key insight? Under certain conditions, the enhancement term (α) can dominate the decoherence term (β), creating windows of quantum advantage.
@@ -69,6 +69,30 @@ This **Quantum Correlation Amplification Law** predicts when and how environment
 
 ---
 
+## Recent Advances
+
+<div class="feature-section">
+  <div class="feature-card">
+    <h3>🔄 Multi-Scale Modeling</h3>
+    <p>Our new multi-scale modeling framework bridges fundamental quantum field theory with observable effects across microscopic to macroscopic scales.</p>
+    <a href="multi_scale_framework.html" class="cta-btn">Learn More</a>
+  </div>
+  
+  <div class="feature-card">
+    <h3>🧪 Experimental Validation</h3>
+    <p>We've developed a minimal viable experiment and rigorous falsification framework to provide clear pathways for testing EQFE predictions.</p>
+    <a href="experimental_validation.html" class="cta-btn">Learn More</a>
+  </div>
+  
+  <div class="feature-card">
+    <h3>🖥️ Advanced Simulations</h3>
+    <p>New computational tools simulate quantum correlation enhancement across multiple parameter regimes with precise predictions.</p>
+    <a href="computational_tools.html" class="cta-btn">Learn More</a>
+  </div>
+</div>
+
+---
+
 ## Explore the Research
 
 <div class="card-grid">
@@ -95,7 +119,7 @@ This **Quantum Correlation Amplification Law** predicts when and how environment
     <div class="card-content">
       <h3 class="card-title">🔬 Experimental Protocols</h3>
       <p>Detailed instructions for testing EQFE predictions in the laboratory.</p>
-      <a href="visualization_assets/amplification_mechanism.html" class="cta-btn">View Protocols</a>
+      <a href="experimental_validation.html" class="cta-btn">View Protocols</a>
     </div>
   </div>
 </div>
