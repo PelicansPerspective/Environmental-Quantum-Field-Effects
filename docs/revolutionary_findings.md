@@ -135,4 +135,4 @@ Our discoveries point to several promising research directions:
 
 ## Publications
 
-For detailed scientific reports on these findings, please see our [publications list](publications.html).
+For detailed scientific reports on these findings, please see our [publications list]({{ site.baseurl }}/publications/).
