@@ -7,22 +7,30 @@ title: EQFE Visualization Assets
 
 This directory contains schematic diagrams and visualization aids for the Environmental Quantum Field Effects (EQFE) project.
 
-## Available Visualizations
+## Interactive Visualizations
+
+Our visualizations are now fully interactive! Mouse over elements, adjust parameters with sliders, and see real-time changes in the quantum field behavior.
 
 <div class="card-grid">
   <div class="card">
+    <div class="card-image">
+      <img src="../assets/images/amplification-preview.png" alt="Amplification Mechanism Preview">
+    </div>
     <div class="card-content">
       <h3 class="card-title">Amplification Mechanism</h3>
-      <p>Schematic diagrams of the quantum correlation amplification mechanism that underlies the EQFE theory.</p>
-      <a href="amplification_mechanism.html" class="cta-btn">View Visualization</a>
+      <p>Interactive diagrams of the quantum correlation amplification mechanism with adjustable parameter regimes.</p>
+      <a href="amplification_mechanism.html" class="cta-btn">Explore Interactive Model</a>
     </div>
   </div>
   
   <div class="card">
+    <div class="card-image">
+      <img src="../assets/images/correlation-preview.png" alt="Field Correlation Preview">
+    </div>
     <div class="card-content">
       <h3 class="card-title">Field Correlation Dynamics</h3>
-      <p>Visualization of field correlation dynamics and their effects on quantum coherence in complex environments.</p>
-      <a href="field_correlation_dynamics.html" class="cta-btn">View Visualization</a>
+      <p>Live visualization of field correlation dynamics with adjustable field masses, temperatures, and spatial distributions.</p>
+      <a href="field_correlation_dynamics.html" class="cta-btn">Explore Interactive Model</a>
     </div>
   </div>
 </div>

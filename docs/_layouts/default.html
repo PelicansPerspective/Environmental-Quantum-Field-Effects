@@ -11,6 +11,13 @@
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
     <meta name="keywords" content="quantum physics, quantum field theory, quantum biology, quantum computing, quantum correlations">
     <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
+    <!-- Plotly.js for interactive visualizations -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- jQuery for collapsible sections -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Interactive visualization styles and scripts -->
+    <link rel="stylesheet" href="{{ '/assets/css/interactive.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="{{ '/assets/js/eqfe-visualizations.js?v=' | append: site.github.build_revision | relative_url }}"></script>
   </head>
   <body>
     <section class="page-header">
@@ -21,6 +28,7 @@
         <nav class="site-nav">
           <a href="{{ '/' | relative_url }}" class="btn"><i class="fas fa-home"></i> Home</a>
           <a href="{{ '/getting_started.html' | relative_url }}" class="btn"><i class="fas fa-book"></i> Documentation</a>
+          <a href="{{ '/theory.html' | relative_url }}" class="btn"><i class="fas fa-square-root-alt"></i> Theory</a>
           <a href="{{ '/project_roadmap.html' | relative_url }}" class="btn"><i class="fas fa-map"></i> Roadmap</a>
           <a href="{{ '/visualization_assets/' | relative_url }}" class="btn"><i class="fas fa-chart-line"></i> Visualizations</a>
           <a href="{{ '/REVOLUTIONARY_FINDINGS.md' | relative_url }}" class="btn"><i class="fas fa-lightbulb"></i> Findings</a>
@@ -69,6 +77,32 @@
       backToTopButton.addEventListener('click', function() {
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      });
+      
+      // Initialize collapsible theory sections and interactive plots when document is ready
+      $(document).ready(function() {
+        // Set up collapsible theory sections
+        $('.collapsible-theory').each(function() {
+          let $header = $(this).find('.collapsible-header');
+          let $content = $(this).find('.collapsible-content');
+          
+          // Initially hide content
+          $content.hide();
+          
+          // Add toggle icon
+          $header.append('<span class="toggle-icon"><i class="fas fa-plus"></i></span>');
+          
+          // Handle click events
+          $header.on('click', function() {
+            $content.slideToggle(300);
+            let $icon = $(this).find('.toggle-icon i');
+            if ($icon.hasClass('fa-plus')) {
+              $icon.removeClass('fa-plus').addClass('fa-minus');
+            } else {
+              $icon.removeClass('fa-minus').addClass('fa-plus');
+            }
+          });
+        });
       });
     </script>
 

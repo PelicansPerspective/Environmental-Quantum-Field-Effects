@@ -25,79 +25,37 @@ This function decays with characteristic time τ_c, which depends inversely on t
 
 ## 2. Correlation Function Visualization
 
-```ascii
-    ^
-    |
-C(τ) |    ****
-    |   *    ****
-    |  *         ****
-    | *              *****
-    |*                    ********
-    |________________________________>
-               Time Separation (τ)
-```
+<div class="visualization-container">
+  <div id="field-correlation-plot" class="plot-container"></div>
+</div>
 
-Different environmental conditions produce different correlation profiles:
+The plot above shows correlation profiles for fields with different masses. Use the sliders to adjust field masses and see how correlation functions change:
 
-```ascii
-    ^
-    |
-C(τ) |    Heavy Field (Large m)
-    |    *
-    |   * *
-    |  *   *
-    | *     *
-    |*       ****************_______>
-    |
-C(τ) |    Medium Field
-    |    *
-    |   *  *
-    |  *    *
-    | *      ****
-    |*          ***********________>
-    |
-C(τ) |    Light Field (Small m)
-    |    *
-    |   *   *
-    |  *      *
-    | *         ***
-    |*              *****************>
-              Time Separation (τ)
-```
+- **Heavy Field (Large m)**: Rapid decay of correlations
+- **Medium Field**: Moderate correlation decay
+- **Light Field (Small m)**: Slow decay with long-range correlations
 
 ## 3. Spatial Correlation Map
 
 The spatial correlation structure of the environmental field creates regions of enhanced quantum effects:
 
-```ascii
-              Low Correlation               High Correlation
-              
-    y ^       . . . . . . . .        y ^    . . . . . . . .
-      |       . . . . . . . .          |    . . * * * * . .
-      |       . . . . . . . .          |    . * * * * * * .
-      |       . . . . . . . .          |    . * * * * * * .
-      |       . . . . . . . .          |    . * * * * * * .
-      |       . . . . . . . .          |    . * * * * * * .
-      |       . . . . . . . .          |    . . * * * * . .
-      |       . . . . . . . .          |    . . . . . . . .
-      +---------------------> x        +---------------------> x
-                                       
-              Field Variance Map      Quantum Enhancement Map
-```
+<div class="visualization-container">
+  <div id="spatial-correlation-plot" class="plot-container"></div>
+</div>
+
+These spatial correlation maps show how fields can have structured (high correlation) vs. random (low correlation) spatial distributions. Quantum enhancement is much more likely in the high-correlation regions where field modes are synchronized.
 
 ## 4. Temperature Effects on Correlations
 
-```ascii
-                 T = 0                        T > 0                      T >> T_opt
-    ^            ^                            ^                          ^
-    |            |                            |                          |
-C(τ)|      *     |                *           |              *           |
-    |     * *    |               * *          |             * *          |
-    |    *   *   |              *   *         |            *   *         |
-    |   *     *  |             *     *        |           *     *        |
-    |  *       * |            *       *       |          *       *       |
-    | *         *|           *         *      |         *         *      |
-    |*           |          *           *     |        *           *     |
+<div class="visualization-container">
+  <div id="temperature-effects-plot" class="plot-container"></div>
+</div>
+
+Temperature significantly affects field correlation functions. The plot above shows how increasing temperature leads to faster decay of correlations. Use the temperature slider to see how thermal effects influence quantum correlation potential:
+
+- **T = 0**: Ground state correlations (quantum vacuum)
+- **T > 0**: Moderate thermal effects
+- **T >> T_opt**: High temperature regime with rapid decoherence
     +----------->|         *             *    |       *             *    |
          τ       |        *               *   |      *               *   |
                  +------------------------->  +------------------------->

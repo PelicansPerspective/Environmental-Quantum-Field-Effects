@@ -11,19 +11,9 @@ The following diagrams illustrate the key mechanisms by which environmental quan
 
 ## 1. Basic Amplification Process
 
-```ascii
-           Environmental Field φ(x,t)
-                     ||||
-                     vvvv
-                 +---------+
-Quantum      -->|         |-->  Amplified
-System (ρ₀)    |  A(φ,t)  |     Correlations (ρₜ)
-                |         |
-                +---------+
-                     ^
-                     |
-             Coupling Strength (g)
-```
+<div class="visualization-container">
+  <div id="amplification-process-plot" class="plot-container"></div>
+</div>
 
 The amplification process relies on constructive interference between quantum system dynamics and environmental field fluctuations. Under optimized conditions, the amplification factor A(φ,t) enhances rather than suppresses quantum correlations.
 
@@ -44,60 +34,26 @@ Where:
 
 ## 3. Detailed Mechanism Diagram
 
-```ascii
-                                    Environmental
-                                    Field Modes
-                                        |
-                                        v
-+----------------+              +----------------+
-|                |  Coupling g  |                |
-| Quantum System |<------------>| Environmental  |
-| (Bell State)   |              | Scalar Field   |
-|                |              |                |
-+----------------+              +----------------+
-        |                               |
-        v                               v
-   +----------+                  +--------------+
-   | Original |                  | Field        |
-   | Quantum  |                  | Correlation  |
-   | Coherence|                  | Function     |
-   +----------+                  +--------------+
-        |                               |
-        |                               |
-        v                               v
-              +-------------------+
-              | Interference Term |
-              |                   |
-              | α⟨φ²⟩t - β∫C(τ)dτ |
-              +-------------------+
-                        |
-                        v
-                +-------------+
-                | Correlation |
-                | Enhancement |
-                | or Decay    |
-                +-------------+
-                        |
-                        v
-               Decision Boundary:
-               Enhancement when: α⟨φ²⟩ > β∙τ_c⁻¹
-```
+The interactive Sankey diagram above illustrates the complete process of quantum correlation amplification by environmental fields:
+
+1. A quantum system (such as a Bell state) interacts with an environmental scalar field
+2. The coupling strength g determines the interaction dynamics
+3. The field's correlation function and the quantum system's coherence interact
+4. The interference term determines whether amplification or decay occurs
+5. Under optimal conditions (α⟨φ²⟩ > β∙τ_c⁻¹), quantum correlations are enhanced rather than destroyed
 
 ## 4. Parameter Regimes
 
-```ascii
-    ^
-    |                            QUANTUM ADVANTAGE
-    |                          ..................
-A(φ,t)|                       /                 \
-    |                        /                   \
-    |                       /                     \
-    |   CLASSICAL REGIME   /                       \ DECOHERENCE REGIME
-    |                     /                         \
-    |____________________|___________________________|_______>
-                        T_min                      T_max
-                                Temperature
-```
+<div class="visualization-container">
+  <div id="parameter-regimes-plot" class="plot-container"></div>
+</div>
+
+The plot above shows the temperature window where quantum advantage occurs. Use the sliders to adjust:
+
+- **Temperature Window Width**: Controls how narrow or wide the quantum advantage region is
+- **Peak Amplitude**: Controls the maximum strength of quantum correlation amplification
+
+This helps visualize why natural systems might evolve to operate near the optimal temperature for quantum advantage (T_opt).
 
 The amplification effect creates a "Goldilocks zone" between classical behavior and quantum decoherence, where environmental assistance actually enhances quantum correlations.
 

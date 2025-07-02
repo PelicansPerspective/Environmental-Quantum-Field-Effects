@@ -20,13 +20,21 @@ These visualizations are provided to aid in understanding the theoretical concep
 2. Maintain the scientific accuracy of the information presented
 3. Include relevant mathematical expressions alongside visual representations
 
-## Markdown Rendering
+## Interactive Visualizations
 
-The visualizations in this directory use Markdown with embedded ASCII diagrams and equations formatted with LaTeX. For optimal viewing:
+The visualizations in this directory are now fully interactive using Plotly.js:
 
-- Use a Markdown viewer that supports LaTeX math rendering
-- For presentations, consider exporting to PDF or HTML
-- For publications, convert the diagrams to vector graphics
+- **Mouse over elements** to see detailed data points
+- **Use the sliders** to adjust parameters and see real-time changes
+- **Explore different regimes** by manipulating field masses, temperatures, and coupling strengths
+
+These interactive features help develop intuition about quantum field effects in complex environments.
+
+## Technical Implementation
+
+- Visualizations use Plotly.js for interactive charts and diagrams
+- LaTeX equations are properly formatted and made collapsible for better readability
+- Mobile-responsive design ensures visualizations work on all devices
 
 ## Contributing
 
