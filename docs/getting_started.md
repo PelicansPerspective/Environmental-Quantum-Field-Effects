@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Getting Started with EQFE
+permalink: /getting_started.html
 ---
 
 # Getting Started with EQFE

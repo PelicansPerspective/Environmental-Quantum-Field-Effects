@@ -1,4 +1,8 @@
-# API Reference
+---
+layout: default
+title: API Reference
+permalink: /api_reference.html
+---
 
 ## Core Components
 
