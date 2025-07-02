@@ -30,6 +30,8 @@ The Environmental Quantum Field Effects (EQFE) project has uncovered **groundbre
 A(φ,t) = exp[α⟨φ²⟩t - β∫₀ᵗ C(τ) dτ]
 ```
 
+[📊 View Amplification Mechanism Diagrams](docs/visualization_assets/amplification_mechanism.md)
+
 Where:
 
 - **α = g²/2**: Enhancement parameter (evolution optimizes this)
@@ -62,6 +64,8 @@ Where:
 2. **Time Evolution**: Non-monotonic with initial enhancement, eventual decay
 3. **Mass Dependence**: Correlation time τ_c ∝ 1/m determines dynamics
 4. **Coupling Scaling**: Enhancement ∝ g², decoherence ∝ g⁴
+
+[📈 View Field Correlation Dynamics](docs/visualization_assets/field_correlation_dynamics.md)
 
 ## 🧪 Experimental Program
 
@@ -160,7 +164,10 @@ Environmental-Quantum-Field-Effects/
 ├── 📖 docs/                       # Documentation & guides
 │   ├── getting_started.md         # Onboarding documentation
 │   ├── project_roadmap.md         # Timeline and milestones
-│   └── README.md                  # Documentation index
+│   ├── README.md                  # Documentation index
+│   └── visualization_assets/      # Visual diagrams and schematics
+│       ├── amplification_mechanism.md  # Amplification process diagrams
+│       └── field_correlation_dynamics.md  # Field correlation visualizations
 ├── README.md                      # Project overview
 ├── CONTRIBUTING.md                # Contribution guidelines
 ├── CITATIONS.md                   # Academic citations
