@@ -132,7 +132,7 @@ This document contains formatted citations for key literature referenced in the 
 
 ### EQFE Framework Citation
 
-**Todd, J.** (2024). Environmental Quantum Field Effects: A Novel Framework for Quantum Enhancement through Environmental Engineering. *GitHub Repository*. https://github.com/justin-todd/Environmental-Quantum-Field-Effects
+**Todd, J.** (2024). Environmental Quantum Field Effects: A Novel Framework for Quantum Enhancement through Environmental Engineering. *GitHub Repository*. https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects
 
 **BibTeX:**
 ```bibtex
@@ -141,7 +141,7 @@ This document contains formatted citations for key literature referenced in the 
   author = {Todd, Justin},
   year = {2024},
   publisher = {GitHub},
-  url = {https://github.com/justin-todd/Environmental-Quantum-Field-Effects},
+  url = {https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects},
   note = {Pelicans Perspective Research}
 }
 ```
@@ -151,7 +151,7 @@ This document contains formatted citations for key literature referenced in the 
 **Author**: Justin Todd  
 **Email**: justin@pelicansperspective.com  
 **Organization**: Pelicans Perspective  
-**GitHub**: https://github.com/justin-todd
+**GitHub**: https://github.com/PelicansPerspective
 
 ---
 
@@ -164,7 +164,7 @@ This document contains formatted citations for key literature referenced in the 
   institution={Nexus Project},
   year={2024},
   type={Internal Report},
-  url={https://github.com/JustinTodd/Nexus}
+  url={https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects}
 }
 ```
 
@@ -207,7 +207,7 @@ This document contains formatted citations for key literature referenced in the 
 @software{todd2025eqfe,
   title={Environmental Quantum Field Effects: Complete Framework and Implementation},
   author={Todd, Justin and Contributors},
-  url={https://github.com/JustinTodd/Environmental-Quantum-Field-Effects},
+  url={https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects},
   year={2025}
 }
 ```
@@ -242,14 +242,14 @@ Todd, J. From Beautiful Failures to Rigorous Physics: The CFH-to-EQFE Evolution.
 
 ### Nexus Repository
 
-- **URL**: https://github.com/JustinTodd/Nexus
+- **URL**: https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects
 - **Status**: Complete archive of consciousness-field speculation
 - **License**: [To be specified]
 - **DOI**: [To be assigned if deposited in repository]
 
 ### EQFE Repository
 
-- **URL**: https://github.com/JustinTodd/Environmental-Quantum-Field-Effects  
+- **URL**: https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects  
 - **Status**: Production-ready physics implementation
 - **License**: MIT License
 - **Citation**: Use software citation format above

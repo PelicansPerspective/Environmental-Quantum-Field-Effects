@@ -109,4 +109,4 @@ print(f"g: {results['coupling']:.2e} ± {results['coupling_error']:.2e}")
 ## References
 
 - [Amplification Law Derivation]({{ site.baseurl }}/theory/detailed-amplification-derivation/)
-<!-- TODO: Add documentation for Experimental Protocols and Validation Methods when available -->
+

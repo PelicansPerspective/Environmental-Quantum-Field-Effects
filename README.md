@@ -213,7 +213,7 @@ Environmental-Quantum-Field-Effects/
 ### Installation
 
 ```bash
-git clone https://github.com/[username]/Environmental-Quantum-Field-Effects.git
+git clone https://github.com/PelicansPerspective/Environmental-Quantum-Field-Effects.git
 cd Environmental-Quantum-Field-Effects
 pip install -r requirements.txt
 ```
