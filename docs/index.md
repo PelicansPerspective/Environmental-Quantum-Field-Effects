@@ -11,8 +11,8 @@ title: Environmental Quantum Field Effects
   <p>The Environmental Quantum Field Effects (EQFE) project explores this radical possibility through rigorous theoretical analysis, computational modeling, and experimental validation. We're not just studying quantum mechanics—we're discovering how nature itself has evolved to harness quantum field effects for enhanced information processing.</p>
   
   <div class="cta-buttons">
-    <a href="{{ site.baseurl }}/getting_started.html" class="cta-btn">Get Started</a>
-    <a href="{{ site.baseurl }}/project_roadmap.html" class="cta-btn">View Roadmap</a>
+    <a href="{{ site.baseurl }}/getting-started/" class="cta-btn">Get Started</a>
+    <a href="{{ site.baseurl }}/project-roadmap/" class="cta-btn">View Roadmap</a>
   </div>
 </div>
 

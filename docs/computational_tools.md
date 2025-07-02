@@ -4,7 +4,7 @@ The Environmental Quantum Field Effects (EQFE) framework now includes advanced s
 
 ## API Documentation
 
-For detailed information about using the computational tools and hardware interfaces, please refer to our [Complete API Reference](api_reference.html).
+For detailed information about using the computational tools and hardware interfaces, please refer to our [Complete API Reference]({{ site.baseurl }}/api-reference/).
 
 ## Multi-Scale Simulation Framework
 

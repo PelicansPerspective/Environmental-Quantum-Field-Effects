@@ -46,11 +46,11 @@ permalink: /theory/
 
 For more detailed mathematical derivations and theoretical analysis, please see:
 
-- [Amplification Law Derivation](theory/amplification_law_derivation.html) - Complete derivation from first principles
-- [Detailed Amplification Derivation](theory/detailed_amplification_derivation.html) - In-depth analysis with all steps
-- [Tsirelson Bound Proof](theory/tsirelson_bound_proof.html) - Proof that our model respects quantum limits
-- [Conceptual Clarifications](theory/conceptual_clarifications.html) - Common questions and conceptual framework
-- [Theoretical Enhancement Plan](theory/theoretical_enhancement_plan.html) - Future directions for theoretical work
+- [Amplification Law Derivation](theory/amplification-law-derivation/) - Complete derivation from first principles
+- [Detailed Amplification Derivation](theory/detailed-amplification-derivation/) - In-depth analysis with all steps
+- [Tsirelson Bound Proof](theory/tsirelson-bound-proof/) - Proof that our model respects quantum limits
+- [Conceptual Clarifications](theory/conceptual-clarifications/) - Common questions and conceptual framework
+- [Theoretical Enhancement Plan](theory/theoretical-enhancement-plan/) - Future directions for theoretical work
 
 ## Interactive Visualizations
 
